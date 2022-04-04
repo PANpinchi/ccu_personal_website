@@ -390,7 +390,7 @@
                                         <div style="height: 1rem"></div>
                                         <div id="itsa" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#itsa_img">
-                                                <img src="./assets/img/itsa.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/itsa.jpg" style="height: auto; width: 100%; max-height: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="itsa_img">
@@ -1537,8 +1537,6 @@ window.setInterval(function(){
         $("#participate_table_phone").css('display', 'none');
 
         $("[id=foot]").css('display', 'none');
-
-        $("#itsa").css('padding-right', '10px');
     }
 }, 100);
 
