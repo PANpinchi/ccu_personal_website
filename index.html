@@ -35,9 +35,9 @@
                 <div class="navbar-collapse collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#research-section">Research</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#participate-section">Participate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#participate">Participate</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,14 +52,14 @@
                         <div style="height: 0rem"></div>
                         <img src="./assets/img/corgi.png" class="welcome_controller_0" width="200" height="200">
                         <div style="height: 1rem"></div>
-                        <a class="btn btn-light btn-lg controller_0" style="border-radius: 30px; font-size: 18px;" href="#about-section">more</a>
+                        <a class="btn btn-light btn-lg controller_0" style="border-radius: 30px; font-size: 18px;" href="#about">more</a>
                     </div>
                     <div class="col-lg-8 align-self-baseline"></div>
                 </div>
             </div>
         </header>
         <!-- About-->
-        <section id="about-section" class="page-section" style="background-color: #f0f0f0" id="about">
+        <section class="page-section" style="background-color: #f0f0f0" id="about">
             <div align="center">
                 <div class="box" align="center">
                     <h2 class="text_color2 font-weight-bold">About</h2>
@@ -1015,7 +1015,7 @@
             </div>
         </section>
         <!-- Research-->
-        <section id="research-section" class="page-section" style="background-color: #f8f8f8" id="research">
+        <section class="page-section" style="background-color: #f8f8f8" id="research">
             <div class="container px-4 px-lg-5">
                 <div align="center">
                     <div class="box_2" align="center">
@@ -1064,7 +1064,7 @@
             </div>
         </section>
         <!-- Participate-->
-        <section id="participate-section" class="page-section" style="background-color: #f0f0f0" id="participate"> <!--class: bg-primary-->
+        <section class="page-section" style="background-color: #f0f0f0" id="participate"> <!--class: bg-primary-->
             <div align="center">
                 <div class="box" align="center">
                     <h2 class="text_color2 font-weight-bold">Participate</h2>
@@ -1186,6 +1186,7 @@
                         <i class="fa fa-github" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; GitHub</h6>
                     </a>
+                    <div id="foot" style="display: none;"></div>
                     <a id="instagram_link" href="https://www.instagram.com/pinchi_0718/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Instagram</h6>
@@ -1203,6 +1204,7 @@
                         <i class="fa fa-phone-square" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Phone : 0916579116</h6>
                     </a>
+                    <div id="foot" style="display: none;"></div>
                     <a id="mail_link" href="mailto:pinchi1609@gmail.com" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Gmail : pinchi1609@gmail.com</h6>
@@ -1497,12 +1499,12 @@ window.setInterval(function(){
 
     if(mobile_flag){
         $("#masthead").css('height', '100%');
-        $("#about-section").removeClass('page-section');
-        $("#research-section").removeClass('page-section');
-        $("#participate-section").removeClass('page-section');
-        $("#about-section").css('padding', '2rem 2rem 2rem 2rem');
-        $("#research-section").css('padding', '2rem 2rem 2rem 2rem');
-        $("#participate-section").css('padding', '2rem 2rem 2rem 2rem');
+        $("#about").removeClass('page-section');
+        $("#research").removeClass('page-section');
+        $("#participate").removeClass('page-section');
+        $("#about").css('padding', '2rem 2rem 2rem 2rem');
+        $("#research").css('padding', '2rem 2rem 2rem 2rem');
+        $("#participate").css('padding', '2rem 2rem 2rem 2rem');
 
         $("#header").css('border-right', '');
         $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
@@ -1514,10 +1516,28 @@ window.setInterval(function(){
         $("#participate_table").css('display', 'none');
         $("#participate_table_phone").css('display', 'block');
 
-        $("#web_link").after('<br>');
-        $("#github_link").after('<br>');
-        $("#instagram_link").after('<br>');
-        $("#phone_link").after('<br>');
+        $("[id=foot]").css('display', 'block');
+        $("[id=foot]").css('height', '1rem');
+    }
+    else{
+        $("#masthead").css('height', '');
+        $("#about").addClass('page-section');
+        $("#research").addClass('page-section');
+        $("#participate").addClass('page-section');
+        $("#about").css('padding', '');
+        $("#research").css('padding', '');
+        $("#participate").css('padding', '');
+
+        $("#header").css('border-right', 'solid rgb(200, 200, 200)');
+        $("#header").css('border-bottom', '');
+        $("#header").css('padding-bottom', '');
+        $("#header").css('margin-bottom', '');
+        $("[id=raise]").css('display', 'none');
+
+        $("#participate_table").css('display', 'block');
+        $("#participate_table_phone").css('display', 'none');
+
+        $("[id=foot]").css('display', 'none');
     }
 }, 100);
 
@@ -1546,6 +1566,4 @@ function isMobile() {
 
      return mobile_flag;
 }
-
-
 </script>

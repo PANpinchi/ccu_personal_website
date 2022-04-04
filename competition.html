@@ -8,7 +8,6 @@
         <title>PinChi | Personal Website</title>
         <!-- Bootstrap css js jquery-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -34,13 +33,12 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#competition">Competition</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header id="masthead" class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
@@ -73,6 +71,7 @@
                         <img id="niag" src="./assets/img/niag.jpg" style="height: auto; width: 100%; border-radius: 8px; box-shadow: 0px 0px 3px 3px #f0f0f0;">
                     </div>
                 </div>
+                <div id="raise" style="display: none;"></div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="text-left about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 6px 6px #f0f0f0; padding: 10px;">
                         <h4 class="text_color3 font-weight-bold">108年 全國救難人員救生競賽</h4>
@@ -80,6 +79,7 @@
                         <img id="nlc_1" src="./assets/img/nlc_1.jpg" style="height: auto; width: 100%; border-radius: 8px; box-shadow: 0px 0px 3px 3px #f0f0f0;">
                     </div>
                 </div>
+                <div id="raise" style="display: none;"></div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="text-left about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 6px 6px #f0f0f0; padding: 10px;">
                         <h4 class="text_color3 font-weight-bold">108年 全國救難人員救生競賽</h4>
@@ -97,6 +97,7 @@
                         <img id="nlc_3" src="./assets/img/nlc_3.jpg" style="height: auto; width: 100%; border-radius: 8px; box-shadow: 0px 0px 3px 3px #f0f0f0;">
                     </div>
                 </div>
+                <div id="raise" style="display: none;"></div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="text-left about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 6px 6px #f0f0f0; padding: 20px;">
                         <h4 class="text_color3 font-weight-bold">108年 全國救難人員救生競賽</h4>
@@ -104,6 +105,7 @@
                         <img id="nlc_4" src="./assets/img/nlc_4.jpg" style="height: auto; width: 100%; border-radius: 8px; box-shadow: 0px 0px 3px 3px #f0f0f0;">
                     </div>
                 </div>
+                <div id="raise" style="display: none;"></div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="text-left about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 6px 6px #f0f0f0; padding: 20px;">
                         <h4 class="text_color3 font-weight-bold">108年 全國救難人員救生競賽</h4>
@@ -112,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div style="height: 4rem"></div>
+            <div style="height: 2rem"></div>
             <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #f0f0f0; padding: 30px;">
                 <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
                     <img src="./assets/img/cheerleading.jpg" style="height: 100%; width: 100%;">
@@ -137,32 +139,34 @@
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">
-                    <a href="index.html" class="link_out" style="margin-left: 1%; margin-right: 1%; font-size: 15px;">
+                    <a id="web_link" href="index.html" class="link_out" style="margin-left: 1%; margin-right: 1%; font-size: 15px;">
                         <i class="fa fa-link" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block; font-size: 15px;">&nbsp; Website</h6>
                     </a>
-                    <a href="https://github.com/PANpinchi" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
+                    <a id="github_link" href="https://github.com/PANpinchi" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; GitHub</h6>
                     </a>
-                    <a href="https://www.instagram.com/pinchi_0718/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
+                    <div id="foot" style="display: none;"></div>
+                    <a id="instagram_link" href="https://www.instagram.com/pinchi_0718/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Instagram</h6>
                     </a>
-                    <a href="https://www.linkedin.com/in/%E5%93%81%E9%BD%8A-%E6%BD%98-563444217/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
+                    <a id="linkedin_link" href="https://www.linkedin.com/in/%E5%93%81%E9%BD%8A-%E6%BD%98-563444217/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; LinkedIn</h6>
+                        <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Linkedin</h6>
                     </a>
                 </div>
             </div>
             <div style="height: 1rem"></div>
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">
-                    <a href="tel:+886-916579116" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
+                    <a id="phone_link" href="tel:+886-916579116" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
                         <i class="fa fa-phone-square" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Phone : 0916579116</h6>
                     </a>
-                    <a href="mailto:pinchi1609@gmail.com" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
+                    <div id="foot" style="display: none;"></div>
+                    <a id="mail_link" href="mailto:pinchi1609@gmail.com" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Gmail : pinchi1609@gmail.com</h6>
                     </a>
@@ -190,11 +194,58 @@
 </html>
 
 <script>
-$(document).ready(function(){
+window.setInterval(function(){
+    var mobile_flag = isMobile(); // true爲PC端，false爲手機端
+
     $('#nlc_1').css('height', $('#niag').height());
     $('#nlc_2').css('height', $('#niag').height());
     $('#nlc_3').css('height', $('#niag').height());
     $('#nlc_4').css('height', $('#niag').height());
     $('#nlc_5').css('height', $('#niag').height());
-});
+
+    if(mobile_flag){
+        $("#masthead").css('height', '100%');
+        $("#competition").removeClass('page-section');
+        $("#competition").css('padding', '2rem 2rem 2rem 2rem');
+
+        $("[id=raise]").css('display', 'block');
+        $("[id=raise]").css('height', '2rem');
+        $("[id=foot]").css('display', 'block');
+        $("[id=foot]").css('height', '1rem');
+    }
+    else{
+        $("#masthead").css('height', '');
+        $("#competition").addClass('page-section');
+        $("#competition").css('padding', '');
+
+        $("[id=raise]").css('display', 'none');
+        $("[id=foot]").css('display', 'none');
+    }
+}, 100);
+
+function isMobile() {
+    var userAgentInfo = navigator.userAgent;
+
+    var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];
+
+    var mobile_flag = false;
+
+    //根據userAgent判斷是否是手機
+    for (var v = 0; v < mobileAgents.length; v++) {
+        if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+            mobile_flag = true;
+            break;
+        }
+    }
+
+     var screen_width = window.screen.width;
+     var screen_height = window.screen.height;    
+
+     //根據屏幕分辨率判斷是否是手機
+     if(screen_width < 500 && screen_height < 800){
+         mobile_flag = true;
+     }
+
+     return mobile_flag;
+}
 </script>
