@@ -12,7 +12,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <script src="https://use.fontawesome.com/7bdf6b5116.js"></script>
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -300,7 +299,12 @@
                         <div>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a id="programming_link" class="nav-link active" style="color: #7700ff;" href="##">
+                                    <a id="award_link" class="nav-link active" style="color: #7700ff;" href="##">
+                                        <h6 class="font-weight-bold">Award</h6>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="programming_link" class="nav-link" style="color: #7700ff;" href="##">
                                         <h6 class="font-weight-bold">Programming</h6>
                                     </a>
                                 </li>
@@ -312,10 +316,67 @@
                             </ul>
                         </div>
                         <div>
-                            <div id="programming" style="display: block; padding-top: 2rem; padding-bottom: 2rem;">
+                            <div id="award" style="display: block;">
                                 <div class="row">
-                                    <div style="height: 2rem;"></div>
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 2rem;">
+                                        <ul>
+                                            <li>
+                                                <h5 class="text_color3 font-weight-bold">Presidential Honor Award</h5>
+                                                <h6 class="text_color4 font-weight-bold">December 24, 2021</h6>
+                                            </li>
+                                        </ul>
+                                        <div style="height: 1rem"></div>
+                                        <div id="presidential" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
+                                            <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#presidential_img">
+                                                <img src="./assets/img/presidential_honor_award.jpg" style="height: auto; width: 100%;">
+                                            </a>
+                                        </div>
+                                        <div class="modal fade" id="presidential_img">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Presidential Honor Award</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="./assets/img/presidential_honor_award.jpg" style="height: auto; width: 100%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6" style="padding: 2rem;">
+                                        <ul>
+                                            <li>
+                                                <h5 class="text_color3 font-weight-bold">Dean's List Award</h5>
+                                                <h6 class="text_color4 font-weight-bold">March 23, 2021</h6>
+                                            </li>
+                                        </ul>
+                                        <div style="height: 1rem"></div>
+                                        <div id="dean" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
+                                            <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#dean_img">
+                                                <img src="./assets/img/dean's_list_award.jpg" style="height: auto; width: 100%;">
+                                            </a>
+                                        </div>
+                                        <div class="modal fade" id="dean_img">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Dean's List Award</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="./assets/img/dean's_list_award.jpg" style="height: auto; width: 100%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="programming" style="display: none;">
+                                <div class="row">
+                                    <div class="col-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">ITSA Programming Proficiency Test</h5>
@@ -323,7 +384,8 @@
                                                 <h6 class="text_color4 font-weight-bold">September 29, 2021</h6>
                                             </li>
                                         </ul>
-                                        <div id="itsa" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div style="height: 1rem"></div>
+                                        <div id="itsa" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#itsa_img">
                                                 <img src="./assets/img/itsa.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -342,7 +404,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Collegiate Programming Examination</h5>
@@ -350,7 +412,8 @@
                                                 <h6 class="text_color4 font-weight-bold">October 19, 2021</h6>
                                             </li>
                                         </ul>
-                                        <div id="cpe" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div style="height: 1rem"></div>
+                                        <div id="cpe" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#cpe_img">
                                                 <img src="./assets/img/cpe.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -370,9 +433,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div style="height: 2rem"></div>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">CCU EE & CE Software Competition</h5>
@@ -380,7 +442,8 @@
                                                 <h6 class="text_color4 font-weight-bold">November 03, 2021</h6>
                                             </li>
                                         </ul>
-                                        <div id="ee_programming" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div style="height: 1rem"></div>
+                                        <div id="ee_programming" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#ee_programming_img">
                                                 <img src="./assets/img/ee_programming.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -399,7 +462,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">CCU Software Competition</h5>
@@ -407,7 +470,8 @@
                                                 <h6 class="text_color4 font-weight-bold">December 16, 2021</h6>
                                             </li>
                                         </ul>
-                                        <div id="ccu_programming" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div style="height: 1rem"></div>
+                                        <div id="ccu_programming" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#ccu_programming_img">
                                                 <img src="./assets/img/ccu_programming.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -428,10 +492,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="project" style="display: none; padding-top: 2rem; padding-bottom: 2rem;">
+                            <div id="project" style="display: none;">
+                                <div style="height: 1rem;"></div>
                                 <div class="row">
-                                    <div style="height: 2rem;"></div>
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Web Development : CCU Trading Website</h5>
@@ -439,13 +503,13 @@
                                                 <h6 class="text_color4 font-weight-bold">Completion Date : January 2022</h6>
                                             </li>
                                         </ul>
-                                        <div id="ccu_trading" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div id="ccu_trading" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="https://ccu-trading.000webhostapp.com/" type="button" target="_blank">
                                                 <img src="./assets/img/ccu_trading.png" style="height: auto; width: 100%;">
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Face Detection Implementation in Matlab</h5>
@@ -453,7 +517,7 @@
                                                 <h6 class="text_color4 font-weight-bold">Completion Date : December 2021</h6>
                                             </li>
                                         </ul>
-                                        <div id="face_detection" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div id="face_detection" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#face_detection_img">
                                                 <img src="./assets/img/face_detection.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -473,17 +537,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div style="height: 2rem"></div>
+                                <div style="height: 1rem;"></div>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Pac Man Implementation in 8051</h5>
-                                                <h6 class="text_color4 font-weight-bold">Control The PacMan to Eat All The Beans Hidden in The Maze</h6>
+                                                <h6 class="text_color4 font-weight-bold">Control PacMan to Eat All The Beans Hidden in The Maze</h6>
                                                 <h6 class="text_color4 font-weight-bold">Completion Date : December 2021</h6>
                                             </li>
                                         </ul>
-                                        <div id="pacman" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div id="pacman" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#pacman_img">
                                                 <img src="./assets/img/8051.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -502,7 +566,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Minesweeper Implementation in C</h5>
@@ -512,7 +576,7 @@
                                                 <h6 class="text_color4 font-weight-bold">Completion Date : June 2020</h6>
                                             </li>
                                         </ul>
-                                        <div id="bomb" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; margin: 10%;">
+                                        <div id="bomb" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#bomb_img">
                                                 <img src="./assets/img/bomb.jpg" style="height: auto; width: 100%;">
                                             </a>
@@ -1004,51 +1068,102 @@
                     <h4 class="text_color2 font-weight-bold">參與活動</h4>
                 </div>
             </div>
-            <div style="height: 2rem"></div>
-            <div class="row gx-8 gx-lg-8">
-                <div class="col-lg-6 col-md-6 text-center" style="padding-left: 15%; padding-right: 6%;">
-                    <a href="activities.html" type="button" style="text-decoration:none;">
-                        <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
-                            <img id="ccuee_camp" src="./assets/img/ccuee_camp.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
-                            <div style="height: 2rem"></div>
-                            <h5 class="text_color4 font-weight-bold">Activities</h5>
-                            <h5 class="text_color4 font-weight-bold">活動</h5>
-                        </div>
-                    </a>
+            <div class="container px-4 px-lg-4" align="center">
+                <table class="text-center" style="table-layout: fixed; height: 70%; width: 70%;">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 2rem;">
+                                <a href="activities.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="ccuee_camp" src="./assets/img/ccuee_camp.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Activities</h5>
+                                        <h5 class="text_color4 font-weight-bold">活動</h5>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="padding: 2rem;">
+                                <a href="varsity.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="ccu_billiard" src="./assets/img/ccu_billiard.jpg" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Varsity</h5>
+                                        <h5 class="text_color4 font-weight-bold">校隊</h5>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2rem;">
+                                <a href="entrepreneurship.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="bamboo" src="./assets/img/bamboo.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Entrepreneurship Project</h5>
+                                        <h5 class="text_color4 font-weight-bold">新創專題</h5>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="padding: 2rem;">
+                                <a href="competition.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="competition" src="./assets/img/award.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Sports Competition</h5>
+                                        <h5 class="text_color4 font-weight-bold">運動賽事</h5>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--
+                <div class="row gx-4 gx-lg-5 justify-content-center" style="background-color: #00a2ff;">
+                    <div class="col-lg-5 container text-center" style="padding-left: 4rem; padding-right: 4rem; background-color: #00ff04;">
+                        <a href="activities.html" type="button" style="text-decoration:none;">
+                            <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                <img id="ccuee_camp" src="./assets/img/ccuee_camp.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
+                                <div style="height: 2rem"></div>
+                                <h5 class="text_color4 font-weight-bold">Activities</h5>
+                                <h5 class="text_color4 font-weight-bold">活動</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 container text-center" style="padding-left: 4rem; padding-right: 4rem; background-color: #ff4d00;">
+                        <a href="varsity.html" type="button" style="text-decoration:none;">
+                            <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                <img id="ccu_billiard" src="./assets/img/ccu_billiard.jpg" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
+                                <div style="height: 2rem"></div>
+                                <h5 class="text_color4 font-weight-bold">Varsity</h5>
+                                <h5 class="text_color4 font-weight-bold">校隊</h5>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 text-center" style="padding-left: 2%; padding-right: 15%;">
-                    <a href="varsity.html" type="button" style="text-decoration:none;">
-                        <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
-                            <img id="ccu_billiard" src="./assets/img/ccu_billiard.jpg" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
-                            <div style="height: 2rem"></div>
-                            <h5 class="text_color4 font-weight-bold">Varsity</h5>
-                            <h5 class="text_color4 font-weight-bold">校隊</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div style="height: 2rem"></div>
-            <div class="row gx-8 gx-lg-8">
-                <div class="col-lg-6 col-md-6 text-center" style="padding-left: 15%; padding-right: 6%;">
-                    <a href="entrepreneurship.html" type="button" style="text-decoration:none;">
-                        <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
-                            <img id="bamboo" src="./assets/img/bamboo.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
-                            <div style="height: 2rem"></div>
-                            <h5 class="text_color4 font-weight-bold">Entrepreneurship Project</h5>
-                            <h5 class="text_color4 font-weight-bold">新創專題</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 text-center" style="padding-left: 2%; padding-right: 15%;">
-                    <a href="competition.html" type="button" style="text-decoration:none;">
-                        <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
-                            <img id="award" src="./assets/img/award.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
-                            <div style="height: 2rem"></div>
-                            <h5 class="text_color4 font-weight-bold">Sports Competition</h5>
-                            <h5 class="text_color4 font-weight-bold">運動賽事</h5>
-                        </div>
-                    </a>
-                </div>
+                <div style="height: 2rem"></div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 text-center" style="padding-left: 15%; padding-right: 6%;">
+                        <a href="entrepreneurship.html" type="button" style="text-decoration:none;">
+                            <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                <img id="bamboo" src="./assets/img/bamboo.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
+                                <div style="height: 2rem"></div>
+                                <h5 class="text_color4 font-weight-bold">Entrepreneurship Project</h5>
+                                <h5 class="text_color4 font-weight-bold">新創專題</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-center" style="padding-left: 2%; padding-right: 15%;">
+                        <a href="competition.html" type="button" style="text-decoration:none;">
+                            <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                <img id="competition" src="./assets/img/award.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: auto; width: 100%;">
+                                <div style="height: 2rem"></div>
+                                <h5 class="text_color4 font-weight-bold">Sports Competition</h5>
+                                <h5 class="text_color4 font-weight-bold">運動賽事</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>-->
             </div>
         </section>
         <!-- Footer-->
@@ -1133,22 +1248,25 @@ $("#link_2").click(function(){
     $("#certificate").css("display", "none");
     $("#conference").css("display", "none");
 
-    if($("#itsa").height() > $("#cpe").height()){
-        $("#cpe").css("height", $("#itsa").height());
-        $("#cpe").children("a").children("img").css("height", $("#itsa").height());
+    if($("#presidential").height() > $("#dean").height()){
+        $("#presidential").css("height", $("#presidential").height());
+        $("#presidential").css("width", $("#presidential").width());
+        $("#presidential").children("a").children("img").css("height", $("#presidential").height());
+        $("#presidential").children("a").children("img").css("width", $("#presidential").width());
+        $("#dean").css("height", $("#presidential").height());
+        $("#dean").css("width", $("#presidential").width());
+        $("#dean").children("a").children("img").css("height", $("#presidential").height());
+        $("#dean").children("a").children("img").css("width", $("#presidential").width());
     }
     else{
-        $("#itsa").css("height", $("#cpe").height());
-        $("#itsa").children("a").children("img").css("height", $("#cpe").height());
-    }
-
-    if($("#ee_programming").height() > $("#ccu_programming").height()){
-        $("#ccu_programming").css("height", $("#ee_programming").height());
-        $("#ccu_programming").children("a").children("img").css("height", $("#ee_programming").height());
-    }
-    else{
-        $("#ee_programming").css("height", $("#ccu_programming").height());
-        $("#ee_programming").children("a").children("img").css("height", $("#ccu_programming").height());
+        $("#presidential").css("height", $("#dean").height());
+        $("#presidential").css("width", $("#dean").width());
+        $("#presidential").children("a").children("img").css("height", $("#dean").height());
+        $("#presidential").children("a").children("img").css("width", $("#dean").width());
+        $("#dean").css("height", $("#dean").height());
+        $("#dean").css("width", $("#dean").width());
+        $("#dean").children("a").children("img").css("height", $("#dean").height());
+        $("#dean").children("a").children("img").css("width", $("#dean").width());
     }
 });
 
@@ -1178,57 +1296,141 @@ $("#link_4").click(function(){
     $("#conference").css("display", "block");
 });
 
+$("#award_link").click(function(){
+    $("#award_link").removeClass("active");
+    $("#programming_link").removeClass("active");
+    $("#project_link").removeClass("active");
+    $("#award_link").addClass("active");
+
+    $("#award").css("display", "block");
+    $("#programming").css("display", "none");
+    $("#project").css("display", "none");
+
+    if($("#presidential").height() > $("#dean").height()){
+        $("#presidential").css("height", $("#presidential").height());
+        $("#presidential").css("width", $("#presidential").width());
+        $("#presidential").children("a").children("img").css("height", $("#presidential").height());
+        $("#presidential").children("a").children("img").css("width", $("#presidential").width());
+        $("#dean").css("height", $("#presidential").height());
+        $("#dean").css("width", $("#presidential").width());
+        $("#dean").children("a").children("img").css("height", $("#presidential").height());
+        $("#dean").children("a").children("img").css("width", $("#presidential").width());
+    }
+    else{
+        $("#presidential").css("height", $("#dean").height());
+        $("#presidential").css("width", $("#dean").width());
+        $("#presidential").children("a").children("img").css("height", $("#dean").height());
+        $("#presidential").children("a").children("img").css("width", $("#dean").width());
+        $("#dean").css("height", $("#dean").height());
+        $("#dean").css("width", $("#dean").width());
+        $("#dean").children("a").children("img").css("height", $("#dean").height());
+        $("#dean").children("a").children("img").css("width", $("#dean").width());
+    }
+});
+
 $("#programming_link").click(function(){
+    $("#award_link").removeClass("active");
     $("#programming_link").removeClass("active");
     $("#project_link").removeClass("active");
     $("#programming_link").addClass("active");
 
+    $("#award").css("display", "none");
     $("#programming").css("display", "block");
     $("#project").css("display", "none");
 
     if($("#itsa").height() > $("#cpe").height()){
+        $("#itsa").css("height", $("#itsa").height());
+        $("#itsa").css("width", $("#itsa").width());
+        $("#itsa").children("a").children("img").css("height", $("#itsa").height());
+        $("#itsa").children("a").children("img").css("width", $("#itsa").width());
         $("#cpe").css("height", $("#itsa").height());
+        $("#cpe").css("width", $("#itsa").width());
         $("#cpe").children("a").children("img").css("height", $("#itsa").height());
+        $("#cpe").children("a").children("img").css("width", $("#itsa").width());
     }
     else{
         $("#itsa").css("height", $("#cpe").height());
+        $("#itsa").css("width", $("#cpe").width());
         $("#itsa").children("a").children("img").css("height", $("#cpe").height());
+        $("#itsa").children("a").children("img").css("width", $("#cpe").width());
+        $("#cpe").css("height", $("#cpe").height());
+        $("#cpe").css("width", $("#cpe").width());
+        $("#cpe").children("a").children("img").css("height", $("#cpe").height());
+        $("#cpe").children("a").children("img").css("width", $("#cpe").width());
     }
 
     if($("#ee_programming").height() > $("#ccu_programming").height()){
+        $("#ee_programming").css("height", $("#ee_programming").height());
+        $("#ee_programming").css("width", $("#ee_programming").width());
+        $("#ee_programming").children("a").children("img").css("height", $("#ee_programming").height());
+        $("#ee_programming").children("a").children("img").css("width", $("#ee_programming").width());
         $("#ccu_programming").css("height", $("#ee_programming").height());
+        $("#ccu_programming").css("width", $("#ee_programming").width());
         $("#ccu_programming").children("a").children("img").css("height", $("#ee_programming").height());
+        $("#ccu_programming").children("a").children("img").css("width", $("#ee_programming").width());
     }
     else{
         $("#ee_programming").css("height", $("#ccu_programming").height());
+        $("#ee_programming").css("width", $("#ccu_programming").width());
         $("#ee_programming").children("a").children("img").css("height", $("#ccu_programming").height());
+        $("#ee_programming").children("a").children("img").css("width", $("#ccu_programming").width());
+        $("#ccu_programming").css("height", $("#ccu_programming").height());
+        $("#ccu_programming").css("width", $("#ccu_programming").width());
+        $("#ccu_programming").children("a").children("img").css("height", $("#ccu_programming").height());
+        $("#ccu_programming").children("a").children("img").css("width", $("#ccu_programming").width());
     }
 });
 
 $("#project_link").click(function(){
+    $("#award_link").removeClass("active");
     $("#project_link").removeClass("active");
     $("#programming_link").removeClass("active");
     $("#project_link").addClass("active");
 
-    $("#project").css("display", "block");
+    $("#award").css("display", "none");
     $("#programming").css("display", "none");
+    $("#project").css("display", "block");
 
     if($("#ccu_trading").height() > $("#face_detection").height()){
+        $("#ccu_trading").css("height", $("#ccu_trading").height());
+        $("#ccu_trading").css("width", $("#ccu_trading").width());
+        $("#ccu_trading").children("a").children("img").css("height", $("#ccu_trading").height());
+        $("#ccu_trading").children("a").children("img").css("width", $("#ccu_trading").width());
         $("#face_detection").css("height", $("#ccu_trading").height());
+        $("#face_detection").css("width", $("#ccu_trading").width());
         $("#face_detection").children("a").children("img").css("height", $("#ccu_trading").height());
+        $("#face_detection").children("a").children("img").css("width", $("#ccu_trading").width());
     }
     else{
         $("#ccu_trading").css("height", $("#face_detection").height());
+        $("#ccu_trading").css("width", $("#face_detection").width());
         $("#ccu_trading").children("a").children("img").css("height", $("#face_detection").height());
+        $("#ccu_trading").children("a").children("img").css("width", $("#face_detection").width());
+        $("#face_detection").css("height", $("#face_detection").height());
+        $("#face_detection").css("width", $("#face_detection").width());
+        $("#face_detection").children("a").children("img").css("height", $("#face_detection").height());
+        $("#face_detection").children("a").children("img").css("width", $("#face_detection").width());
     }
 
     if($("#pacman").height() > $("#bomb").height()){
+        $("#pacman").css("height", $("#pacman").height());
+        $("#pacman").css("width", $("#pacman").width());
+        $("#pacman").children("a").children("img").css("height", $("#pacman").height());
+        $("#pacman").children("a").children("img").css("width", $("#pacman").width());
         $("#bomb").css("height", $("#pacman").height());
+        $("#bomb").css("width", $("#pacman").width());
         $("#bomb").children("a").children("img").css("height", $("#pacman").height());
+        $("#bomb").children("a").children("img").css("width", $("#pacman").width());
     }
     else{
         $("#pacman").css("height", $("#bomb").height());
+        $("#pacman").css("width", $("#bomb").width());
         $("#pacman").children("a").children("img").css("height", $("#bomb").height());
+        $("#pacman").children("a").children("img").css("width", $("#bomb").width());
+        $("#bomb").css("height", $("#bomb").height());
+        $("#bomb").css("width", $("#bomb").width());
+        $("#bomb").children("a").children("img").css("height", $("#bomb").height());
+        $("#bomb").children("a").children("img").css("width", $("#bomb").width());
     }
 });
 
@@ -1269,15 +1471,15 @@ $(document).ready(function(){
     var ccuee_camp = $("#ccuee_camp").height();
     var ccu_billiard = $("#ccu_billiard").height();
     var bamboo = $("#bamboo").height();
-    var award = $("#award").height();
-    var max_value = Math.max(ccuee_camp, ccu_billiard, bamboo, award);
+    var competition = $("#competition").height();
+    var max_value = Math.max(ccuee_camp, ccu_billiard, bamboo, competition);
     $("#ccuee_camp").css("height", max_value);
     $("#ccuee_camp").css("width", max_value);
     $("#ccu_billiard").css("height", max_value);
     $("#ccu_billiard").css("width", max_value);
     $("#bamboo").css("height", max_value);
     $("#bamboo").css("width", max_value);
-    $("#award").css("height", max_value);
-    $("#award").css("width", max_value);
+    $("#competition").css("height", max_value);
+    $("#competition").css("width", max_value);
 });
 </script>
