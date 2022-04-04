@@ -235,7 +235,7 @@
     align-items: center;
     overflow: hidden;
     background: #f0f0f0;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .box::before{
@@ -253,7 +253,7 @@
     position: absolute;
     inset: 4px;
     background: #f0f0f0;
-    border-radius: 18px;
+    border-radius: 8px;
 }
 
 .box h2, h4{
