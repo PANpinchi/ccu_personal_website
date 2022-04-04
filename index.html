@@ -27,16 +27,17 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">PinChi | Personal Website</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="container">
+                <a id="title" class="navbar-brand" href="#page-top">PinChi | Personal Website</a>
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#participate">Participate</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#research-section">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#participate-section">Participate</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +51,7 @@
                         <div style="height: 0rem"></div>
                         <img src="./assets/img/corgi.png" class="welcome_controller_0" width="200" height="200">
                         <div style="height: 1rem"></div>
-                        <a class="btn btn-light btn-lg controller_0" style="border-radius: 30px; font-size: 18px;" href="#about">more</a>
+                        <a class="btn btn-light btn-lg controller_0" style="border-radius: 30px; font-size: 18px;" href="#about-section">more</a>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
 
@@ -59,7 +60,7 @@
             </div>
         </header>
         <!-- About-->
-        <section class="page-section" style="background-color: #f0f0f0" id="about"> <!--class: bg-primary-->
+        <section id="about-section" class="page-section" style="background-color: #f0f0f0" id="about">
             <div align="center">
                 <div class="box" align="center">
                     <h2 class="text_color2 font-weight-bold">About</h2>
@@ -68,10 +69,10 @@
             </div>
             <div style="height: 2rem"></div>
             <div class="container px-4 px-lg-5 about_table">
-                <div style="height: 20px"></div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div style="height: 2rem"></div>
+                <div class="row gx-lg-5 justify-content-center">
                     <div style="height: 40px"></div>
-                    <div class="col-lg-4 text-center" style="border-right: solid rgb(200, 200, 200);" align="center">
+                    <div id="header" class="col-sm-12 col-lg-4 text-center" style="border-right: solid rgb(200, 200, 200);" align="center">
                         <div align="center">
                             <div class="headerout">
                                 <img src="./assets/img/pinchi.jpg" class="header">
@@ -185,7 +186,7 @@
                 <div>
                     <div id="skill" style="display: block; padding-top: 2rem; padding-bottom: 2rem;">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-sm-12 col-lg-4">
                                 <h5 class="text_color3 font-weight-bold">Web Development</h5>
                                 <hr>
                                 <ul>
@@ -206,7 +207,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-4">
+                            <div id="raise"></div>
+                            <div class="col-sm-12 col-lg-4">
                                 <h5 class="text_color3 font-weight-bold">Machine Learning</h5>
                                 <hr>
                                 <ul>
@@ -227,7 +229,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-4">
+                            <div id="raise"></div>
+                            <div class="col-sm-12 col-lg-4">
                                 <h5 class="text_color3 font-weight-bold">Others</h5>
                                 <hr>
                                 <ul>
@@ -251,7 +254,7 @@
                         </div>
                         <div style="height: 2rem"></div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-sm-12 col-lg-6">
                                 <h5 class="text_color3 font-weight-bold">Development Environment / IDE</h5>
                                 <hr>
                                 <ul>
@@ -272,7 +275,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6">
+                            <div id="raise"></div>
+                            <div class="col-sm-12 col-lg-6">
                                 <h5 class="text_color3 font-weight-bold">Strengths</h5>
                                 <hr>
                                 <ul>
@@ -318,7 +322,7 @@
                         <div>
                             <div id="award" style="display: block;">
                                 <div class="row">
-                                    <div class="col-6" style="padding: 2rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Presidential Honor Award</h5>
@@ -345,7 +349,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6" style="padding: 2rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Dean's List Award</h5>
@@ -376,7 +380,7 @@
                             </div>
                             <div id="programming" style="display: none;">
                                 <div class="row">
-                                    <div class="col-6" style="padding: 2rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">ITSA Programming Proficiency Test</h5>
@@ -404,7 +408,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6" style="padding: 2rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Collegiate Programming Examination</h5>
@@ -434,7 +438,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6" style="padding: 2rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">CCU EE & CE Software Competition</h5>
@@ -462,7 +466,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6" style="padding: 2rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">CCU Software Competition</h5>
@@ -495,7 +499,7 @@
                             <div id="project" style="display: none;">
                                 <div style="height: 1rem;"></div>
                                 <div class="row">
-                                    <div class="col-6" style="padding: 1rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Web Development : CCU Trading Website</h5>
@@ -509,7 +513,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-6" style="padding: 1rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Face Detection Implementation in Matlab</h5>
@@ -539,7 +543,7 @@
                                 </div>
                                 <div style="height: 1rem;"></div>
                                 <div class="row">
-                                    <div class="col-6" style="padding: 1rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Pac Man Implementation in 8051</h5>
@@ -566,7 +570,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6" style="padding: 1rem;">
+                                    <div class="col-sm-12 col-lg-6" style="padding: 1rem;">
                                         <ul>
                                             <li>
                                                 <h5 class="text_color3 font-weight-bold">Minesweeper Implementation in C</h5>
@@ -1012,7 +1016,7 @@
             </div>
         </section>
         <!-- Research-->
-        <section class="page-section" style="background-color: #f8f8f8" id="research">
+        <section id="research-section" class="page-section" style="background-color: #f8f8f8" id="research">
             <div class="container px-4 px-lg-5">
                 <div align="center">
                     <div class="box_2" align="center">
@@ -1061,7 +1065,7 @@
             </div>
         </section>
         <!-- Participate-->
-        <section class="page-section" style="background-color: #f0f0f0" id="participate"> <!--class: bg-primary-->
+        <section id="participate-section" class="page-section" style="background-color: #f0f0f0" id="participate"> <!--class: bg-primary-->
             <div align="center">
                 <div class="box" align="center">
                     <h2 class="text_color2 font-weight-bold">Participate</h2>
@@ -1069,7 +1073,7 @@
                 </div>
             </div>
             <div class="container px-4 px-lg-4" align="center">
-                <table class="text-center" style="table-layout: fixed; height: 70%; width: 70%;">
+                <table id="participate_table" class="text-center" style="display: block; table-layout: fixed; height: 70%; width: 70%;">
                     <tbody>
                         <tr>
                             <td style="padding: 2rem;">
@@ -1117,38 +1121,90 @@
                         </tr>
                     </tbody>
                 </table>
+                <table id="participate_table_phone" class="text-center" style="display: none; table-layout: fixed;">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 2rem;">
+                                <a href="activities.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="ccuee_camp" src="./assets/img/ccuee_camp.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Activities</h5>
+                                        <h5 class="text_color4 font-weight-bold">活動</h5>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2rem;">
+                                <a href="varsity.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="ccu_billiard" src="./assets/img/ccu_billiard.jpg" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Varsity</h5>
+                                        <h5 class="text_color4 font-weight-bold">校隊</h5>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2rem;">
+                                <a href="entrepreneurship.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="bamboo" src="./assets/img/bamboo.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Entrepreneurship Project</h5>
+                                        <h5 class="text_color4 font-weight-bold">新創專題</h5>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 2rem;">
+                                <a href="competition.html" type="button" style="text-decoration:none; height: 100%; width: 100%;">
+                                    <div class="about_table fadeInUp" style="border-radius: 10px; box-shadow: 0px 0px 1px 1px #cccccc; padding: 20px;">
+                                        <img id="competition" src="./assets/img/award.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; max-height: 100%; max-width: 100%;">
+                                        <div style="height: 2rem"></div>
+                                        <h5 class="text_color4 font-weight-bold">Sports Competition</h5>
+                                        <h5 class="text_color4 font-weight-bold">運動賽事</h5>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">
-                    <a href="index.html" class="link_out" style="margin-left: 1%; margin-right: 1%; font-size: 15px;">
+                    <a id="web_link" href="index.html" class="link_out" style="margin-left: 1%; margin-right: 1%; font-size: 15px;">
                         <i class="fa fa-link" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block; font-size: 15px;">&nbsp; Website</h6>
                     </a>
-                    <a href="https://github.com/PANpinchi" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
+                    <a id="github_link" href="https://github.com/PANpinchi" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; GitHub</h6>
                     </a>
-                    <a href="https://www.instagram.com/pinchi_0718/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
+                    <a id="instagram_link" href="https://www.instagram.com/pinchi_0718/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Instagram</h6>
                     </a>
-                    <a href="https://www.linkedin.com/in/%E5%93%81%E9%BD%8A-%E6%BD%98-563444217/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
+                    <a id="linkedin_link" href="https://www.linkedin.com/in/%E5%93%81%E9%BD%8A-%E6%BD%98-563444217/" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;" target="_blank">
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; LinkedIn</h6>
+                        <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Linkedin</h6>
                     </a>
                 </div>
             </div>
             <div style="height: 1rem"></div>
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">
-                    <a href="tel:+886-916579116" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
+                    <a id="phone_link" href="tel:+886-916579116" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
                         <i class="fa fa-phone-square" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Phone : 0916579116</h6>
                     </a>
-                    <a href="mailto:pinchi1609@gmail.com" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
+                    <a id="mail_link" href="mailto:pinchi1609@gmail.com" class="link_out" style="margin-left: 1%; margin-right: 1%;  font-size: 15px;">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h6 class="font-weight-bold" style="display: inline-block;  font-size: 15px;">&nbsp; Gmail : pinchi1609@gmail.com</h6>
                     </a>
@@ -1435,4 +1491,60 @@ $(document).ready(function(){
     $("#competition").css("height", max_value);
     $("#competition").css("width", max_value);
 });
+
+
+$(function(){
+    var mobile_flag = isMobile(); // true爲PC端，false爲手機端
+
+    if(mobile_flag){
+        $("#about-section").removeClass('page-section');
+        $("#research-section").removeClass('page-section');
+        $("#participate-section").removeClass('page-section');
+        $("#about-section").css('padding', '2rem 2rem 2rem 2rem');
+        $("#research-section").css('padding', '2rem 2rem 2rem 2rem');
+        $("#participate-section").css('padding', '2rem 2rem 2rem 2rem');
+
+        $("#header").css('border-right', '');
+        $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
+        $("#header").css('padding-bottom', '1rem');
+        $("#header").css('margin-bottom', '2rem');
+        $("[id=raise]").css('height', '2rem');
+
+        $("#participate_table").css('display', 'none');
+        $("#participate_table_phone").css('display', 'block');
+
+        $("#web_link").after('<br>');
+        $("#github_link").after('<br>');
+        $("#instagram_link").after('<br>');
+        $("#phone_link").after('<br>');
+    }
+});
+
+function isMobile() {
+    var userAgentInfo = navigator.userAgent;
+
+    var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];
+
+    var mobile_flag = false;
+
+    //根據userAgent判斷是否是手機
+    for (var v = 0; v < mobileAgents.length; v++) {
+        if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+            mobile_flag = true;
+            break;
+        }
+    }
+
+     var screen_width = window.screen.width;
+     var screen_height = window.screen.height;    
+
+     //根據屏幕分辨率判斷是否是手機
+     if(screen_width < 500 && screen_height < 800){
+         mobile_flag = true;
+     }
+
+     return mobile_flag;
+}
+
+
 </script>
