@@ -8,7 +8,7 @@
         <title>PinChi | Personal Website</title>
         <!-- Bootstrap css js jquery-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -23,6 +23,18 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/pinchi.css" rel="stylesheet" />
+        <style>
+        .d-none {
+            display: none;
+        }
+        .invalid-feedback {
+            display: none;
+        }
+        .btn.disabled {
+            pointer-events: none;
+            opacity: 0.65;
+        }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -32,8 +44,8 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+                <div class="navbar-collapse collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#research-section">Research</a></li>
@@ -1506,7 +1518,7 @@ $(function(){
         $("#header").css('border-right', '');
         $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
         $("#header").css('padding-bottom', '1rem');
-        $("#header").css('margin-bottom', '2rem');
+        $("#header").css('margin-bottom', '3rem');
         $("[id=raise]").css('display', 'block');
         $("[id=raise]").css('height', '2rem');
 
