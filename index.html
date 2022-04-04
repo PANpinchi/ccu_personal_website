@@ -331,7 +331,7 @@
                                         <div style="height: 1rem"></div>
                                         <div id="presidential" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#presidential_img">
-                                                <img src="./assets/img/presidential_honor_award.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/presidential_honor_award.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="presidential_img">
@@ -358,7 +358,7 @@
                                         <div style="height: 1rem"></div>
                                         <div id="dean" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#dean_img">
-                                                <img src="./assets/img/dean's_list_award.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/dean's_list_award.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="dean_img">
@@ -448,7 +448,7 @@
                                         <div style="height: 1rem"></div>
                                         <div id="ee_programming" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#ee_programming_img">
-                                                <img src="./assets/img/ee_programming.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/ee_programming.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="ee_programming_img">
@@ -476,7 +476,7 @@
                                         <div style="height: 1rem"></div>
                                         <div id="ccu_programming" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#ccu_programming_img">
-                                                <img src="./assets/img/ccu_programming.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/ccu_programming.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="ccu_programming_img">
@@ -508,7 +508,7 @@
                                         </ul>
                                         <div id="ccu_trading" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="https://ccu-trading.000webhostapp.com/" type="button" target="_blank">
-                                                <img src="./assets/img/ccu_trading.png" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/ccu_trading.png" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                     </div>
@@ -522,7 +522,7 @@
                                         </ul>
                                         <div id="face_detection" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#face_detection_img">
-                                                <img src="./assets/img/face_detection.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/face_detection.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="face_detection_img">
@@ -552,7 +552,7 @@
                                         </ul>
                                         <div id="pacman" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#pacman_img">
-                                                <img src="./assets/img/8051.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/8051.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="pacman_img">
@@ -581,7 +581,7 @@
                                         </ul>
                                         <div id="bomb" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
                                             <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#bomb_img">
-                                                <img src="./assets/img/bomb.jpg" style="height: auto; width: 100%;">
+                                                <img src="./assets/img/bomb.jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
                                         <div class="modal fade" id="bomb_img">
@@ -1478,7 +1478,6 @@ $("#python_link").click(function(){
 });
 
 $(document).ready(function(){
-    alert('2');
     var ccuee_camp = $("#ccuee_camp").height();
     var ccu_billiard = $("#ccu_billiard").height();
     var bamboo = $("#bamboo").height();
@@ -1518,8 +1517,6 @@ window.setInterval(function(){
 
         $("[id=foot]").css('display', 'block');
         $("[id=foot]").css('height', '1rem');
-
-        $("#itsa").css("width", "100%");
     }
     else{
         $("#masthead").css('height', '');
