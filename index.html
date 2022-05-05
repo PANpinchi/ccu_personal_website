@@ -328,12 +328,12 @@
                                             </li>
                                         </ul>
                                         <div style="height: 1rem"></div>
-                                        <div id="presidential" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
-                                            <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#presidential_img">
-                                                <img src="./assets/img/presidential_honor_award.jpg" style="height: auto; width: 100%; max-width: 100%;">
+                                        <div id="presidential_109-2" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
+                                            <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#presidential_109-2_img">
+                                                <img src="./assets/img/presidential_honor_award(109-2).jpg" style="height: auto; width: 100%; max-width: 100%;">
                                             </a>
                                         </div>
-                                        <div class="modal fade" id="presidential_img">
+                                        <div class="modal fade" id="presidential_109-2_img">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
@@ -341,12 +341,41 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <img src="./assets/img/presidential_honor_award.jpg" style="height: auto; width: 100%;">
+                                                        <img src="./assets/img/presidential_honor_award(109-2).jpg" style="height: auto; width: 100%;">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
+                                        <ul>
+                                            <li>
+                                                <h5 class="text_color3 font-weight-bold">Presidential Honor Award</h5>
+                                                <h6 class="text_color4 font-weight-bold">April 14, 2022</h6>
+                                            </li>
+                                        </ul>
+                                        <div style="height: 1rem"></div>
+                                        <div id="presidential_110-1" class="fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc;">
+                                            <a href="##" type="button" data-bs-toggle="modal" data-bs-target="#presidential_110-1_img">
+                                                <img src="./assets/img/presidential_honor_award(110-1).jpg" style="height: auto; width: 100%; max-width: 100%;">
+                                            </a>
+                                        </div>
+                                        <div class="modal fade" id="presidential_110-1_img">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Presidential Honor Award</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="./assets/img/presidential_honor_award(110-1).jpg" style="height: auto; width: 100%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-sm-12 col-lg-6" style="padding: 2rem;">
                                         <ul>
                                             <li>
@@ -1259,25 +1288,25 @@ $("#link_2").click(function(){
     $("#certificate").css("display", "none");
     $("#conference").css("display", "none");
 
-    if($("#presidential").height() > $("#dean").height()){
-        $("#presidential").css("height", $("#presidential").height());
-        $("#presidential").css("width", $("#presidential").width());
-        $("#presidential").children("a").children("img").css("height", $("#presidential").height());
-        $("#presidential").children("a").children("img").css("width", $("#presidential").width());
-        $("#dean").css("height", $("#presidential").height());
-        $("#dean").css("width", $("#presidential").width());
-        $("#dean").children("a").children("img").css("height", $("#presidential").height());
-        $("#dean").children("a").children("img").css("width", $("#presidential").width());
+    if($("#presidential_109-2").height() > $("#presidential_110-1").height()){
+        $("#presidential_109-2").css("height", $("#presidential_109-2").height());
+        $("#presidential_109-2").css("width", $("#presidential_109-2").width());
+        $("#presidential_109-2").children("a").children("img").css("height", $("#presidential_109-2").height());
+        $("#presidential_109-2").children("a").children("img").css("width", $("#presidential_109-2").width());
+        $("#presidential_110-1").css("height", $("#presidential_109-2").height());
+        $("#presidential_110-1").css("width", $("#presidential_109-2").width());
+        $("#presidential_110-1").children("a").children("img").css("height", $("#presidential_109-2").height());
+        $("#presidential_110-1").children("a").children("img").css("width", $("#presidential_109-2").width());
     }
     else{
-        $("#presidential").css("height", $("#dean").height());
-        $("#presidential").css("width", $("#dean").width());
-        $("#presidential").children("a").children("img").css("height", $("#dean").height());
-        $("#presidential").children("a").children("img").css("width", $("#dean").width());
-        $("#dean").css("height", $("#dean").height());
-        $("#dean").css("width", $("#dean").width());
-        $("#dean").children("a").children("img").css("height", $("#dean").height());
-        $("#dean").children("a").children("img").css("width", $("#dean").width());
+        $("#presidential_109-2").css("height", $("#presidential_110-1").height());
+        $("#presidential_109-2").css("width", $("#presidential_110-1").width());
+        $("#presidential_109-2").children("a").children("img").css("height", $("#presidential_110-1").height());
+        $("#presidential_109-2").children("a").children("img").css("width", $("#presidential_110-1").width());
+        $("#presidential_110-1").css("height", $("#presidential_110-1").height());
+        $("#presidential_110-1").css("width", $("#presidential_110-1").width());
+        $("#presidential_110-1").children("a").children("img").css("height", $("#presidential_110-1").height());
+        $("#presidential_110-1").children("a").children("img").css("width", $("#presidential_110-1").width());
     }
 });
 
@@ -1317,25 +1346,25 @@ $("#award_link").click(function(){
     $("#programming").css("display", "none");
     $("#project").css("display", "none");
 
-    if($("#presidential").height() > $("#dean").height()){
-        $("#presidential").css("height", $("#presidential").height());
-        $("#presidential").css("width", $("#presidential").width());
-        $("#presidential").children("a").children("img").css("height", $("#presidential").height());
-        $("#presidential").children("a").children("img").css("width", $("#presidential").width());
-        $("#dean").css("height", $("#presidential").height());
-        $("#dean").css("width", $("#presidential").width());
-        $("#dean").children("a").children("img").css("height", $("#presidential").height());
-        $("#dean").children("a").children("img").css("width", $("#presidential").width());
+    if($("#presidential_109-2").height() > $("#presidential_110-1").height()){
+        $("#presidential_109-2").css("height", $("#presidential_109-2").height());
+        $("#presidential_109-2").css("width", $("#presidential_109-2").width());
+        $("#presidential_109-2").children("a").children("img").css("height", $("#presidential_109-2").height());
+        $("#presidential_109-2").children("a").children("img").css("width", $("#presidential_109-2").width());
+        $("#presidential_110-1").css("height", $("#presidential_109-2").height());
+        $("#presidential_110-1").css("width", $("#presidential_109-2").width());
+        $("#presidential_110-1").children("a").children("img").css("height", $("#presidential_109-2").height());
+        $("#presidential_110-1").children("a").children("img").css("width", $("#presidential_109-2").width());
     }
     else{
-        $("#presidential").css("height", $("#dean").height());
-        $("#presidential").css("width", $("#dean").width());
-        $("#presidential").children("a").children("img").css("height", $("#dean").height());
-        $("#presidential").children("a").children("img").css("width", $("#dean").width());
-        $("#dean").css("height", $("#dean").height());
-        $("#dean").css("width", $("#dean").width());
-        $("#dean").children("a").children("img").css("height", $("#dean").height());
-        $("#dean").children("a").children("img").css("width", $("#dean").width());
+        $("#presidential_109-2").css("height", $("#presidential_110-1").height());
+        $("#presidential_109-2").css("width", $("#presidential_110-1").width());
+        $("#presidential_109-2").children("a").children("img").css("height", $("#presidential_110-1").height());
+        $("#presidential_109-2").children("a").children("img").css("width", $("#presidential_110-1").width());
+        $("#presidential_110-1").css("height", $("#presidential_110-1").height());
+        $("#presidential_110-1").css("width", $("#presidential_110-1").width());
+        $("#presidential_110-1").children("a").children("img").css("height", $("#presidential_110-1").height());
+        $("#presidential_110-1").children("a").children("img").css("width", $("#presidential_110-1").width());
     }
 });
 
