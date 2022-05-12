@@ -297,6 +297,42 @@
     z-index: 10;
 }
 
+.box_3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.box_3::before{
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    background: linear-gradient(#00ccff, #d400d4);
+    -webkit-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+
+.box_3::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+.box_3 h2, h4{
+    position: relative;
+    z-index: 10;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);

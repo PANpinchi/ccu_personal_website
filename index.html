@@ -146,7 +146,12 @@
                         <ul>
                             <li>
                                 <h6 class="text_color4 font-weight-bold">
-                                    Generating Multimodal Logo Compositional based on Generative Adversarial Networks
+                                    Shot classification based on attention mechanism
+                                </h6>
+                            </li>
+                            <li>
+                                <h6 class="text_color4 font-weight-bold">
+                                    Compositing and Generating Multimodal Logo based on Generative Adversarial Networks
                                 </h6>
                             </li>
                             <li>
@@ -1098,15 +1103,15 @@
                 <div align="center">
                     <div class="box" align="center">
                         <h2 class="text_color2 font-weight-bold">Implementation</h2>
-                        <h4 class="text_color2 font-weight-bold">實作模型</h4>
+                        <h4 class="text_color2 font-weight-bold">模型實作</h4>
                     </div>
                 </div>
                 <div style="height: 2rem"></div>
                 <div class="row">
                     <div id="item" class="col-lg-6 col-md-6 text-center" style="padding: 0% 10% 5% 10%;">
-                        <a href="activities.html" type="button" style="text-decoration:none;">
+                        <a href="gan.html" type="button" style="text-decoration:none;">
                             <div class="about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                                <img id="gan" src="./assets/img/ccuee_camp.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
+                                <img id="gan" src="./assets/img/GAN.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
                                 <div style="height: 2rem"></div>
                                 <h5 class="text_color4 font-weight-bold">GAN</h5>
                                 <h5 class="text_color4 font-weight-bold">生成對抗網路</h5>
@@ -1116,7 +1121,7 @@
                     <div id="item" class="col-lg-6 col-md-6 text-center" style="padding: 0% 10% 5% 10%;">
                         <a href="varsity.html" type="button" style="text-decoration:none;">
                             <div class="about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                                <img id="autoencoder" src="./assets/img/ccu_billiard.jpg" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
+                                <img id="autoencoder" src="./assets/img/AutoEncoder.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
                                 <div style="height: 2rem"></div>
                                 <h5 class="text_color4 font-weight-bold">AutoEncoder</h5>
                                 <h5 class="text_color4 font-weight-bold">自動編碼器
@@ -1130,7 +1135,7 @@
                     <div id="item" class="col-lg-6 col-md-6 text-center" style="padding: 0% 10% 5% 10%;">
                         <a href="entrepreneurship.html" type="button" style="text-decoration:none;">
                             <div class="about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                                <img id="img_classification" src="./assets/img/bamboo.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: 100%; width: 100%;">
+                                <img id="img_classification" src="./assets/img/Classification.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: 100%; width: 100%;">
                                 <div style="height: 2rem"></div>
                                 <h5 class="text_color4 font-weight-bold">Image Classification</h5>
                                 <h5 class="text_color4 font-weight-bold">圖像辨識</h5>
@@ -1140,7 +1145,7 @@
                     <div id="item" class="col-lg-6 col-md-6 text-center" style="padding: 0% 10% 5% 10%;">
                         <a href="competition.html" type="button" style="text-decoration:none;">
                             <div class="about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                                <img id="img_segmentation" src="./assets/img/award.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: 100%; width: 100%;">
+                                <img id="img_segmentation" src="./assets/img/Classification.png" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: 100%; width: 100%;">
                                 <div style="height: 2rem"></div>
                                 <h5 class="text_color4 font-weight-bold">Image Segmentation</h5>
                                 <h5 class="text_color4 font-weight-bold">圖像分割</h5>
@@ -1534,16 +1539,16 @@ window.setInterval(function(){
     $("#competition").css('height', size);
     $("#competition").css('width', size);
 
-    var size = $("#bamboo").parent().parent().width();
-    $("#gan").parent().css('width', size);
-    $("#autoencoder").parent().css('width', size);
-    $("#img_classification").parent().css('width', size);
-    $("#img_segmentation").parent().css('width', size);
-    $("#ccuee_camp").parent().css('width', size);
-    $("#ccu_billiard").parent().css('width', size);
-    $("#competition").parent().css('width', size);
-
     if(mobile_flag){
+        var size = $("#bamboo").parent().parent().width();
+        $("#gan").parent().css('width', size);
+        $("#autoencoder").parent().css('width', size);
+        $("#img_classification").parent().css('width', size);
+        $("#img_segmentation").parent().css('width', size);
+        $("#ccuee_camp").parent().css('width', size);
+        $("#ccu_billiard").parent().css('width', size);
+        $("#competition").parent().css('width', size);
+
         $("#masthead").css('height', '100%');
 
         $("#about").removeClass('page-section');
