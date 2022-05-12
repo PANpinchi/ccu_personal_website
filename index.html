@@ -1514,7 +1514,7 @@ $("#python_link").click(function(){
 window.setInterval(function(){
     var mobile_flag = isMobile(); // true爲PC端，false爲手機端
 
-    var size = $("#gan").width();
+    var size = $("#img_classification").width();
     $("#gan").css('height', size);
     $("#gan").css('width', size);
     $("#autoencoder").css('height', size);
@@ -1524,7 +1524,7 @@ window.setInterval(function(){
     $("#img_segmentation").css('height', size);
     $("#img_segmentation").css('width', size);
 
-    var size = $("#ccuee_camp").width();
+    var size = $("#competition").width();
     $("#ccuee_camp").css('height', size);
     $("#ccuee_camp").css('width', size);
     $("#ccu_billiard").css('height', size);
@@ -1536,17 +1536,22 @@ window.setInterval(function(){
 
     if(mobile_flag){
         $("#masthead").css('height', '100%');
+
         $("#about").removeClass('page-section');
         $("#research").removeClass('page-section');
+        $("#implementation").removeClass('page-section');
         $("#participate").removeClass('page-section');
+
         $("#about").css('padding', '2rem 2rem 2rem 2rem');
         $("#research").css('padding', '2rem 2rem 2rem 2rem');
+        $("#implementation").css('padding', '2rem 2rem 2rem 2rem');
         $("#participate").css('padding', '2rem 2rem 2rem 2rem');
 
         $("#header").css('border-right', '');
         $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
         $("#header").css('padding-bottom', '1rem');
         $("#header").css('margin-bottom', '3rem');
+
         $("[id=raise]").css('display', 'block');
         $("[id=raise]").css('height', '2rem');
 
@@ -1555,17 +1560,22 @@ window.setInterval(function(){
     }
     else{
         $("#masthead").css('height', '');
+
         $("#about").addClass('page-section');
         $("#research").addClass('page-section');
+        $("#implementation").addClass('page-section');
         $("#participate").addClass('page-section');
+
         $("#about").css('padding', '');
         $("#research").css('padding', '');
+        $("#implementation").css('padding', '');
         $("#participate").css('padding', '');
 
         $("#header").css('border-right', 'solid rgb(200, 200, 200)');
         $("#header").css('border-bottom', '');
         $("#header").css('padding-bottom', '');
         $("#header").css('margin-bottom', '');
+        
         $("[id=raise]").css('display', 'none');
 
         $("[id=foot]").css('display', 'none');
