@@ -204,6 +204,15 @@
     font-weight: 1000;
 }
 
+.a_color{
+    background: rgb(64, 106, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 1000;
+}
+
 .headerout{
     width: 150px;
     height: 150px;
