@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#activities">GAN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#activities">Others</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,127 +59,83 @@
             <div class="container px-4 px-lg-5">
                 <div align="center">
                     <div class="box_3" align="center" style="width: fit-content">
-                        <h2 class="text_color2 font-weight-bold">Generative Adversarial Network</h2>
-                        <h4 class="text_color2 font-weight-bold">生成對抗網路</h4>
+                        <h2 class="text_color2 font-weight-bold">Others</h2>
+                        <h4 class="text_color2 font-weight-bold">其他</h4>
                     </div>
                 </div>
                 <div style="height: 2rem"></div>
                 <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                     <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/GAN.png" style="height: 100%; width: 100%;">
+                        <img src="./assets/img/Siamese.png" style="height: 100%; width: 100%;">
                     </div>
                     <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Generative Adversarial Network</h5>
-                        <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">
-                            生成對抗網路是一種非監督式學習的影像生成網路架構，
-                            由生成器（Generator, G）和鑑別器（Discriminator, D）組成，
-                            生成器主要的目的為透過輸入隨機向量學習產生能以假亂真的圖像；
-                            而鑑別器則是學習判斷輸入的圖像為真實或生成的圖像。
-                            透過生成器及鑑別器互相對抗學習，就能生成出逼近真實圖像集裡的圖像。 
-                            對抗損失函數：<br>
-                            V(G, D) = E<sub class="text_color4 font-weight-bold">x~P<sub class="text_color4 font-weight-bold">data</sub></sub>(x)[log D(x)] + E<sub class="text_color4 font-weight-bold">z~P<sub class="text_color4 font-weight-bold">noise</sub></sub>(z) [log (1 - D(G(z)))]<br>
-                            其中 E 為分佈函數的期望值，
-                            P<sub class="text_color4 font-weight-bold">data</sub>(x)為真實圖像的資料分佈，
-                            P<sub class="text_color4 font-weight-bold">noise</sub>(x)為隨機向量的資料分佈，
-                            G(z)為生成器合成的圖像，
-                            D(x)為鑑別器判斷圖像分佈為真實圖像的機率。
-                        </h6>
-                        <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/Implementation/tree/master/WGAN" class="a_color">GAN with Wasserstein distance and Gradient Penalty</a></h6>
-                    </div>
-                </div>
-                <div style="height: 2rem"></div>
-                <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                    <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">條件式生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Conditional Generative Adversarial Network</h5>
+                        <h4 class="text_color3 font-weight-bold">孿生神經網路</h4>
+                        <h5 class="text_color3 font-weight-bold">Siamese Neural Network</h5>
                         <br>
                         <h5 class="text_color4 font-weight-bold" style="line-height: 200%">
-                            條件式生成對抗網路是一種基於 GAN 的神經網路架構，
-                            Conditional GAN 的生成器與鑑別器可以加入額外的條件，
-                            因此目標資料集必須標記與圖像匹配的條件標籤。
-                            生成器可透過隨機產生的條件及隨機向量產生出符合該條件的圖片，
-                            試圖使鑑別器的誤判為該條件的真實圖片。
-                            訓練鑑別器的過程為輸入真實圖片、生成圖片和各自匹配的標籤，
-                            訓練鑑別器判斷真偽。
+                            Siamese Neural Network 是一種特殊類型的神經網路架構，
+                            與一個學習對其輸入進行分類的模型不同，
+                            該神經網路是學習在兩個輸入中進行區分。
+                            它學習了兩個輸入之間的相似之處。
+                            當我們在做單樣本分類任務的時候，
+                            網路可以比較測試集與訓練集中的每張圖片，
+                            然後挑選出哪一張與它最可能是同樣類別。
                         </h5>
                         <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/Implementation/tree/master/CWGAN" class="a_color">Conditional GAN with Wasserstein Distance</a></h6>
-                    </div>
-                    <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/Conditional_GAN.png" style="height: 100%; width: 100%;">
-                    </div>
-                </div>
-                <div style="height: 2rem"></div>
-                <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                    <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/Cycle_GAN.png" style="height: 100%; width: 100%;">
-                    </div>
-                    <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">循環式生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Cycle Generative Adversarial Network</h5>
-                        <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 160%">
-                            圖像轉換的任務中，
-                            如果有大量成對的資料，
-                            可以單純使用編解碼器進行訓練與圖像轉換。
-                            然而要獲得大量的成對資料集是不容易的，
-                            在真實世界中有時甚至是不可能的。
-                            像是照片轉素描或照片轉卡通風格，都會碰到類似問題。
-                            為了解決成對數據不易獲得的問題，
-                            Cycle GAN 的研究探索並建立了於不需要成對資料集，
-                            就能夠實現兩個領域間圖像轉換的一致性。
-                            該研究提出了循環一致性損失（cycle consistency loss），
-                            以減輕訓練的不穩定性。
-                            Cycle GAN 由兩個生成器及兩個鑑別器組合而成，
-                            其中來源領域的輸入圖像先透過一個生成器轉換成目標領域的圖像，
-                            接著透過另一個生成器轉換回來源領域；
-                            此重建圖像會與輸入圖像計算循環一致性損失（𝑓<sub class="text_color4 font-weight-bold">cyc</sub>），
-                            而目標領域的鑑別器則根據生成圖像與真實圖像，
-                            計算對抗損失（𝑓<sub class="text_color4 font-weight-bold">adv</sub>）。
-                            將原有來源與目標領域互換，
-                            則可計算另一組損失和網路。
-                            循環生成對抗網路最後使用了四個損失函數，
-                            對兩個生成器和兩個鑑別器實現聯合最佳化的學習。
-                        </h6>
-                        <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/Implementation/tree/master/CycleGAN" class="a_color">Cycle GAN</a></h6>
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">實作參考文獻：<br><a href="https://www.semanticscholar.org/paper/Siamese-Neural-Networks-for-One-Shot-Image-Koch/f216444d4f2959b4520c61d20003fa30a199670a" class="a_color">Siamese Neural Networks for One-Shot Image Recognition</a></h6>
                     </div>
                 </div>
                 <div style="height: 2rem"></div>
                 <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                     <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">組合式生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Compositional Generative Adversarial Network</h5>
+                        <h4 class="text_color3 font-weight-bold">金字塔深度特徵提取模型</h4>
+                        <h5 class="text_color3 font-weight-bold">Pyramid Deep Feature Extraction Model</h5>
                         <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 150%">
-                            生成對抗網絡可以生成非常複雜和逼真的圖像，
-                            但通常只能從單個圖案中採樣，
-                            而忽略了場景中可能存在多個物件之間的空間交互狀態。
-                            若是想要獲得圖片中不同對象之間複雜的空間交互狀態，
-                            包括它們的相對縮放、空間佈局、遮擋或視點變換，
-                            是一個具有挑戰性的問題。
-                            為了解決圖片合成上空間交互關係的問題，
-                            Compositional GAN 提出了一種自適性組合分解架構 Composition-by-Decomposition (CoDe) 網絡來組合圖片。
-                            給定來自兩個不同分佈的對像圖像，
-                            Compositional GAN 模型可以根據輸入對象的紋理和形狀從它們的聯合分佈中生成逼真的合成圖像。
-                            其輸入為兩個不同的圖像，
-                            該方法的中心思想是通過自適性損失函數監督兩個圖像（X<sup class="text_color4 font-weight-bold">T</sup>，Y<sup class="text_color4 font-weight-bold">T</sup>）的合成，
-                            確保生成的合成圖像可以進一步分解回各自的單獨對像圖像。
-                            合成是使用 Conditional GAN 執行，
-                            該網路將兩個通道的 RGB 圖像 (X<sup class="text_color4 font-weight-bold">T</sup>, Y<sup class="text_color4 font-weight-bold">T</sup>) 作為輸入，
-                            以生成相應的合成輸出，
-                            並適當地合成兩個輸入圖像。 
-                            然後將生成的圖像輸入另一個 Conditional GAN，
-                            使用 L1 損失函數將其分解回其組成對象（X<sup class="text_color4 font-weight-bold">T</sup>, Y<sup class="text_color4 font-weight-bold">T</sup>）。
-                        </h6>
+                        <h5 class="text_color4 font-weight-bold" style="line-height: 200%">
+                            在處理多尺度變化問題時，
+                            目前很多的網絡都使用了利用單個高層特徵，
+                            但是這樣做有一個明顯的缺陷，
+                            即小物體本身俱有的像素信息較少，
+                            在下採樣的過程中極易被丟失，
+                            為了處理這種物體大小差異十分明顯的問題，
+                            傳統的方法便是利用圖像金字塔的方式進行多尺度變化增強。
+                        </h5>
                         <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/Implementation/tree/master/CompositionalGAN" class="a_color">Compositional GAN</a></h6>
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">實作參考文獻：<br><a href="https://www.sciencedirect.com/science/article/abs/pii/S1746809421010259" class="a_color">Exemplar pyramid deep feature extraction based cervical cancer image classification model using pap-smear images</a></h6>
                     </div>
                     <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/Comp_GAN.png" style="height: 100%; width: 100%;">
+                        <img src="./assets/img/Pyramid.png" style="height: 100%; width: 100%;">
+                    </div>
+                </div>
+                <div style="height: 2rem"></div>
+                <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                    <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
+                        <img src="./assets/img/Ensemble.png" style="height: 100%; width: 100%;">
+                    </div>
+                    <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
+                        <h4 class="text_color3 font-weight-bold">集成式學習 - Bagging</h4>
+                        <h5 class="text_color3 font-weight-bold">Ensemble Learning - Bagging</h5>
+                        <br>
+                        <h5 class="text_color4 font-weight-bold" style="line-height: 160%">
+                            所謂的 Ensemble Learning ，
+                            其理念相當於「三個臭皮匠，勝過一個諸葛亮」的概念，
+                            希望藉由團隊合作，
+                            結合多種模型的表現，
+                            提升最後的預測/分類結果。
+                            一般有三種常見的架構：Bagging、Boosting、Stacking。
+                            其中 Bagging 在演算法上，
+                            是將樣本重複抽樣(取後放回)，
+                            產生多個子資料集後，
+                            依序建立多個模型，
+                            最後再將所有模型的結果彙整在一起。
+                            如果是回歸問題，
+                            那就把所有結果平均起來；
+                            如果是分類問題，
+                            那就用投票法，
+                            判斷哪個類別出現最多次。
+                        </h5>
+                        <br>
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">實作參考文獻：<a href="https://arxiv.org/abs/2104.02395" class="a_color">Ensemble deep learning: A review</a></h6>
                     </div>
                 </div>
             </div>

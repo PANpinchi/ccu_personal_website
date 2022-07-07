@@ -66,116 +66,71 @@
                 <div style="height: 2rem"></div>
                 <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                     <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/GAN.png" style="height: 100%; width: 100%;">
+                        <img src="./assets/img/AutoEncoder.png" style="height: 100%; width: 100%;">
                     </div>
                     <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Generative Adversarial Network</h5>
+                        <h4 class="text_color3 font-weight-bold">自動編碼器</h4>
+                        <h5 class="text_color3 font-weight-bold">AutoEncoder</h5>
                         <br>
                         <h6 class="text_color4 font-weight-bold" style="line-height: 200%">
-                            生成對抗網路是一種非監督式學習的影像生成網路架構，
-                            由生成器（Generator, G）和鑑別器（Discriminator, D）組成，
-                            生成器主要的目的為透過輸入隨機向量學習產生能以假亂真的圖像；
-                            而鑑別器則是學習判斷輸入的圖像為真實或生成的圖像。
-                            透過生成器及鑑別器互相對抗學習，就能生成出逼近真實圖像集裡的圖像。 
-                            對抗損失函數：<br>
-                            V(G, D) = E<sub class="text_color4 font-weight-bold">x~P<sub class="text_color4 font-weight-bold">data</sub></sub>(x)[log D(x)] + E<sub class="text_color4 font-weight-bold">z~P<sub class="text_color4 font-weight-bold">noise</sub></sub>(z) [log (1 - D(G(z)))]<br>
-                            其中 E 為分佈函數的期望值，
-                            P<sub class="text_color4 font-weight-bold">data</sub>(x)為真實圖像的資料分佈，
-                            P<sub class="text_color4 font-weight-bold">noise</sub>(x)為隨機向量的資料分佈，
-                            G(z)為生成器合成的圖像，
-                            D(x)為鑑別器判斷圖像分佈為真實圖像的機率。
+                            AutoEncoder 是多層神經網絡的一種非監督式學習算法，稱為自動編碼器。
+                            其架構包含 Encoder（編碼器）和 Decoder（解碼器）兩個部分，它們分別做壓縮與解壓縮的動作，讓輸出值和輸入值表示相同意義
+                            透過重建輸入的神經網路訓練過程，
+                            隱藏層的向量具有降維的作用。
+                            特點是編碼器會建立一個或多個隱藏層，
+                            其中包含了輸入資訊的低維向量。
+                            然後再經由解碼器，通過隱藏層的低維向量重建輸入資料。
+                            通過神經網路的訓練最後 AutoEncoder 會在隱藏層中得到一個代表輸入資料的低維向量。
                         </h6>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/GAN_exercise/tree/master/WGAN" class="a_color">GAN with Wasserstein distance and Gradient Penalty</a></h6>
+                        <br>
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：暫無</h6>
                     </div>
                 </div>
                 <div style="height: 2rem"></div>
                 <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                     <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">條件式生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Conditional Generative Adversarial Network</h5>
+                        <h4 class="text_color3 font-weight-bold">變分自動編碼器</h4>
+                        <h5 class="text_color3 font-weight-bold">Variational Autoencoder</h5>
                         <br>
                         <h5 class="text_color4 font-weight-bold" style="line-height: 200%">
-                            條件式生成對抗網路是一種基於 GAN 的神經網路架構，
-                            Conditional GAN 的生成器與鑑別器可以加入額外的條件，
-                            因此目標資料集必須標記與圖像匹配的條件標籤。
-                            生成器可透過隨機產生的條件及隨機向量產生出符合該條件的圖片，
-                            試圖使鑑別器的誤判為該條件的真實圖片。
-                            訓練鑑別器的過程為輸入真實圖片、生成圖片和各自匹配的標籤，
-                            訓練鑑別器判斷真偽。
+                            VAE 是由 AutoEncoder 改編而成，結構上也是由 Encoder 和 Decoder 所構成。
+                            Variational Autoencoder 與 AutoEncoder 的不同之處在於 VAE 在編碼過程增加了一些限制，
+                            迫使生成的向量遵從高斯分佈。
+                            由於高斯分佈可以通過其 mean 和 standard deviation 進行參數化，
+                            因此 VAE 理論上是可以讓你控制要生成的圖片。
                         </h5>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/GAN_exercise/tree/master/CWGAN" class="a_color">Conditional GAN with Wasserstein Distance</a></h6>
+                        <br>
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：暫無</h6>
                     </div>
                     <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/Conditional_GAN.png" style="height: 100%; width: 100%;">
+                        <img src="./assets/img/VAE.png" style="height: 100%; width: 100%;">
                     </div>
                 </div>
                 <div style="height: 2rem"></div>
                 <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                     <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/Cycle_GAN.png" style="height: 100%; width: 100%;">
+                        <img src="./assets/img/VQVAE.png" style="height: 100%; width: 100%;">
                     </div>
                     <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">循環式生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Cycle Generative Adversarial Network</h5>
+                        <h4 class="text_color3 font-weight-bold">向量化變分自動編碼器</h4>
+                        <h5 class="text_color3 font-weight-bold">Vector-Quantized Variational AutoEncoder</h5>
                         <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 160%">
-                            圖像轉換的任務中，
-                            如果有大量成對的資料，
-                            可以單純使用編解碼器進行訓練與圖像轉換。
-                            然而要獲得大量的成對資料集是不容易的，
-                            在真實世界中有時甚至是不可能的。
-                            像是照片轉素描或照片轉卡通風格，都會碰到類似問題。
-                            為了解決成對數據不易獲得的問題，
-                            Cycle GAN 的研究探索並建立了於不需要成對資料集，
-                            就能夠實現兩個領域間圖像轉換的一致性。
-                            該研究提出了循環一致性損失（cycle consistency loss），
-                            以減輕訓練的不穩定性。
-                            Cycle GAN 由兩個生成器及兩個鑑別器組合而成，
-                            其中來源領域的輸入圖像先透過一個生成器轉換成目標領域的圖像，
-                            接著透過另一個生成器轉換回來源領域；
-                            此重建圖像會與輸入圖像計算循環一致性損失（𝑓<sub class="text_color4 font-weight-bold">cyc</sub>），
-                            而目標領域的鑑別器則根據生成圖像與真實圖像，
-                            計算對抗損失（𝑓<sub class="text_color4 font-weight-bold">adv</sub>）。
-                            將原有來源與目標領域互換，
-                            則可計算另一組損失和網路。
-                            循環生成對抗網路最後使用了四個損失函數，
-                            對兩個生成器和兩個鑑別器實現聯合最佳化的學習。
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">
+                            VQVAE 同樣維持著 Encoder-Decoder 的架構，
+                            這邊所提取的特徵保留了多維的結構，
+                            Encoder 的輸出其實就是在 CNN 中我們熟知的 Feature map。
+                            接著在 Vector Quantization 部分會有 K 個編碼向量，
+                            每一個編碼向量同樣有 D 個維度，
+                            根據 Feature Map 中的每個點位比對 D 維的特徵向量與 Codebook 中 K 個編碼向量的相似程度，
+                            並且以最接近的編碼向量索引作取代，
+                            這樣就達到了將原圖轉換為離散表徵的步驟。
+                            在 Decode 階段，
+                            只要將 Codebook 中相對應的編碼向量置於表徵的相對應位置，
+                            就可以得到轉換後的表徵，
+                            接著同樣通過 Decoder 後就可得到還原後的原始資料。
                         </h6>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/GAN_exercise/tree/master/CycleGAN" class="a_color">Cycle GAN</a></h6>
-                    </div>
-                </div>
-                <div style="height: 2rem"></div>
-                <div class="row gx-4 gx-lg-4 about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                    <div class="col-lg-7 col-md-7 text-left" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
-                        <h4 class="text_color3 font-weight-bold">組合式生成對抗網路</h4>
-                        <h5 class="text_color3 font-weight-bold">Compositional Generative Adversarial Network</h5>
                         <br>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 150%">
-                            生成對抗網絡可以生成非常複雜和逼真的圖像，
-                            但通常只能從單個圖案中採樣，
-                            而忽略了場景中可能存在多個物件之間的空間交互狀態。
-                            若是想要獲得圖片中不同對象之間複雜的空間交互狀態，
-                            包括它們的相對縮放、空間佈局、遮擋或視點變換，
-                            是一個具有挑戰性的問題。
-                            為了解決圖片合成上空間交互關係的問題，
-                            Compositional GAN 提出了一種自適性組合分解架構 Composition-by-Decomposition (CoDe) 網絡來組合圖片。
-                            給定來自兩個不同分佈的對像圖像，
-                            Compositional GAN 模型可以根據輸入對象的紋理和形狀從它們的聯合分佈中生成逼真的合成圖像。
-                            其輸入為兩個不同的圖像，
-                            該方法的中心思想是通過自適性損失函數監督兩個圖像（X<sup class="text_color4 font-weight-bold">T</sup>，Y<sup class="text_color4 font-weight-bold">T</sup>）的合成，
-                            確保生成的合成圖像可以進一步分解回各自的單獨對像圖像。
-                            合成是使用 Conditional GAN 執行，
-                            該網路將兩個通道的 RGB 圖像 (X<sup class="text_color4 font-weight-bold">T</sup>, Y<sup class="text_color4 font-weight-bold">T</sup>) 作為輸入，
-                            以生成相應的合成輸出，
-                            並適當地合成兩個輸入圖像。 
-                            然後將生成的圖像輸入另一個 Conditional GAN，
-                            使用 L1 損失函數將其分解回其組成對象（X<sup class="text_color4 font-weight-bold">T</sup>, Y<sup class="text_color4 font-weight-bold">T</sup>）。
-                        </h6>
-                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/GAN_exercise/tree/master/CompositionalGAN" class="a_color">Compositional GAN</a></h6>
-                    </div>
-                    <div class="col-lg-5 col-md-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 5px 5px #f0f0f0; padding: 10px;">
-                        <img src="./assets/img/Comp_GAN.png" style="height: 100%; width: 100%;">
+                        <h6 class="text_color4 font-weight-bold" style="line-height: 200%">GitHub 連結：<a href="https://github.com/PANpinchi/Implementation/tree/master/VQVAE" class="a_color">VQVAE</a></h6>
                     </div>
                 </div>
             </div>
