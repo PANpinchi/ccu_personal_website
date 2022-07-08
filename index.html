@@ -1074,8 +1074,8 @@
                         </h5>
                         <br>
                         <a href="./assets/pdf/LogoGANs.pdf" type="button" style="text-decoration:none" target="_blank">
-                            <div class="learn_more_outside">
-                                <button type="button" class="font-weight-bold learn_more">
+                            <div id="learn_more_outside" class="learn_more_outside">
+                                <button id="learn_more" type="button" class="font-weight-bold learn_more">
                                     <h6 class="font-weight-bold">Learn More</h6>
                                 </button>
                             </div>
@@ -1098,8 +1098,8 @@
                         </h5>
                         <br>
                         <a href="##" type="button" style="text-decoration:none">
-                            <div class="learn_more_outside">
-                                <button type="button" class="font-weight-bold learn_more">
+                            <div id="learn_more_outside" class="learn_more_outside">
+                                <button id="learn_more" type="button" class="font-weight-bold learn_more">
                                     <h6 class="font-weight-bold">Learn More</h6>
                                 </button>
                             </div>
@@ -1585,6 +1585,9 @@ window.setInterval(function(){
 
         $("[id=foot]").css('display', 'block');
         $("[id=foot]").css('height', '1rem');
+
+        $("[id=learn_more_outside]").css('width', '140px');
+        $("[id=learn_more]").css('width', '133px');
     }
     else{
         $("#masthead").css('height', '');
