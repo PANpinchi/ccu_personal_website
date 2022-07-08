@@ -1561,25 +1561,6 @@ window.setInterval(function(){
         $("#ccu_billiard").parent().css('width', size);
         $("#competition").parent().css('width', size);
 
-        size = $("#others").width();
-        size = 4 * size;
-        $("#gan").css('height', size);
-        $("#gan").css('width', size);
-        $("#autoencoder").css('height', size);
-        $("#autoencoder").css('width', size);
-        $("#image_recognition").css('height', size);
-        $("#image_recognition").css('width', size);
-        $("#others").css('height', size);
-        $("#others").css('width', size);
-        $("#ccuee_camp").css('height', size);
-        $("#ccuee_camp").css('width', size);
-        $("#ccu_billiard").css('height', size);
-        $("#ccu_billiard").css('width', size);
-        $("#bamboo").css('height', size);
-        $("#bamboo").css('width', size);
-        $("#competition").css('height', size);
-        $("#competition").css('width', size);
-
         $("#masthead").css('height', '100%');
 
         $("#about").removeClass('page-section');
@@ -1633,6 +1614,31 @@ window.setInterval(function(){
         $("[id=foot]").css('display', 'none');
     }
 }, 100);
+
+$(function(){
+    var mobile_flag = isMobile(); // true爲PC端，false爲手機端
+
+    if(mobile_flag){
+        size = $("#others").width();
+        size = 4 * size;
+        $("#gan").css('height', size);
+        $("#gan").css('width', size);
+        $("#autoencoder").css('height', size);
+        $("#autoencoder").css('width', size);
+        $("#image_recognition").css('height', size);
+        $("#image_recognition").css('width', size);
+        $("#others").css('height', size);
+        $("#others").css('width', size);
+        $("#ccuee_camp").css('height', size);
+        $("#ccuee_camp").css('width', size);
+        $("#ccu_billiard").css('height', size);
+        $("#ccu_billiard").css('width', size);
+        $("#bamboo").css('height', size);
+        $("#bamboo").css('width', size);
+        $("#competition").css('height', size);
+        $("#competition").css('width', size);
+    }
+});
 
 function isMobile() {
     var userAgentInfo = navigator.userAgent;
