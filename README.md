@@ -1,4 +1,6 @@
-# pinchi.github.io
+<h1>pinchi.github.io</h1>
+
+<img src="./assets/img/website.png">
 
 <h2>Personal Website</h2>
 <span><strong>URL: </strong></span>
