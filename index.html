@@ -1541,92 +1541,94 @@ $("#python_link").click(function(){
     $("#python").css("display", "block");
 });
 
-window.setInterval(function(){
-    var mobile_flag = isMobile(); // true爲PC端，false爲手機端
+$(function(){
+    window.setInterval(function(){
+        var mobile_flag = isMobile(); // true爲PC端，false爲手機端
 
-    var size = $("#others").width();
-    $("#gan").css('height', size);
-    $("#gan").css('width', size);
-    $("#autoencoder").css('height', size);
-    $("#autoencoder").css('width', size);
-    $("#image_recognition").css('height', size);
-    $("#image_recognition").css('width', size);
-    $("#others").css('height', size);
-    $("#others").css('width', size);
+        var size = $("#others").width();
+        $("#gan").css('height', size);
+        $("#gan").css('width', size);
+        $("#autoencoder").css('height', size);
+        $("#autoencoder").css('width', size);
+        $("#image_recognition").css('height', size);
+        $("#image_recognition").css('width', size);
+        $("#others").css('height', size);
+        $("#others").css('width', size);
 
-    //var size = $("#bamboo").width();
-    $("#ccuee_camp").css('height', size);
-    $("#ccuee_camp").css('width', size);
-    $("#ccu_billiard").css('height', size);
-    $("#ccu_billiard").css('width', size);
-    $("#bamboo").css('height', size);
-    $("#bamboo").css('width', size);
-    $("#competition").css('height', size);
-    $("#competition").css('width', size);
+        //var size = $("#bamboo").width();
+        $("#ccuee_camp").css('height', size);
+        $("#ccuee_camp").css('width', size);
+        $("#ccu_billiard").css('height', size);
+        $("#ccu_billiard").css('width', size);
+        $("#bamboo").css('height', size);
+        $("#bamboo").css('width', size);
+        $("#competition").css('height', size);
+        $("#competition").css('width', size);
 
-    if(mobile_flag){
-        var size = $("#bamboo").parent().parent().width();
-        $("#gan").parent().css('width', size);
-        $("#autoencoder").parent().css('width', size);
-        $("#image_recognition").parent().css('width', size);
-        $("#others").parent().css('width', size);
-        $("#ccuee_camp").parent().css('width', size);
-        $("#ccu_billiard").parent().css('width', size);
-        $("#competition").parent().css('width', size);
+        if(mobile_flag){
+            var size = $("#bamboo").parent().parent().width();
+            $("#gan").parent().css('width', size);
+            $("#autoencoder").parent().css('width', size);
+            $("#image_recognition").parent().css('width', size);
+            $("#others").parent().css('width', size);
+            $("#ccuee_camp").parent().css('width', size);
+            $("#ccu_billiard").parent().css('width', size);
+            $("#competition").parent().css('width', size);
 
-        $("#masthead").css('height', '100%');
+            $("#masthead").css('height', '100%');
 
-        $("#about").removeClass('page-section');
-        $("#research").removeClass('page-section');
-        $("#implementation").removeClass('page-section');
-        $("#participate").removeClass('page-section');
+            $("#about").removeClass('page-section');
+            $("#research").removeClass('page-section');
+            $("#implementation").removeClass('page-section');
+            $("#participate").removeClass('page-section');
 
-        $("#about").css('padding', '2rem 2rem 2rem 2rem');
-        $("#research").css('padding', '2rem 2rem 2rem 2rem');
-        $("#implementation").css('padding', '2rem 2rem 2rem 2rem');
-        $("#participate").css('padding', '2rem 2rem 2rem 2rem');
+            $("#about").css('padding', '2rem 2rem 2rem 2rem');
+            $("#research").css('padding', '2rem 2rem 2rem 2rem');
+            $("#implementation").css('padding', '2rem 2rem 2rem 2rem');
+            $("#participate").css('padding', '2rem 2rem 2rem 2rem');
 
-        $("#header").css('border-right', '');
-        $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
-        $("#header").css('padding-bottom', '1rem');
-        $("#header").css('margin-bottom', '3rem');
+            $("#header").css('border-right', '');
+            $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
+            $("#header").css('padding-bottom', '1rem');
+            $("#header").css('margin-bottom', '3rem');
 
-        $("[id=item]").css('padding', '0% 0% 10% 0%');
+            $("[id=item]").css('padding', '0% 0% 10% 0%');
 
-        $("[id=raise]").css('display', 'block');
-        $("[id=raise]").css('height', '2rem');
+            $("[id=raise]").css('display', 'block');
+            $("[id=raise]").css('height', '2rem');
 
-        $("[id=foot]").css('display', 'block');
-        $("[id=foot]").css('height', '1rem');
+            $("[id=foot]").css('display', 'block');
+            $("[id=foot]").css('height', '1rem');
 
-        $("[id=learn_more_outside]").css('width', '124px');
-        $("[id=learn_more]").css('width', '117px');
-    }
-    else{
-        $("#masthead").css('height', '');
+            $("[id=learn_more_outside]").css('width', '124px');
+            $("[id=learn_more]").css('width', '117px');
+        }
+        else{
+            $("#masthead").css('height', '');
 
-        $("#about").addClass('page-section');
-        $("#research").addClass('page-section');
-        $("#implementation").addClass('page-section');
-        $("#participate").addClass('page-section');
+            $("#about").addClass('page-section');
+            $("#research").addClass('page-section');
+            $("#implementation").addClass('page-section');
+            $("#participate").addClass('page-section');
 
-        $("#about").css('padding', '');
-        $("#research").css('padding', '');
-        $("#implementation").css('padding', '');
-        $("#participate").css('padding', '');
+            $("#about").css('padding', '');
+            $("#research").css('padding', '');
+            $("#implementation").css('padding', '');
+            $("#participate").css('padding', '');
 
-        $("#header").css('border-right', 'solid rgb(200, 200, 200)');
-        $("#header").css('border-bottom', '');
-        $("#header").css('padding-bottom', '');
-        $("#header").css('margin-bottom', '');
+            $("#header").css('border-right', 'solid rgb(200, 200, 200)');
+            $("#header").css('border-bottom', '');
+            $("#header").css('padding-bottom', '');
+            $("#header").css('margin-bottom', '');
 
-        $("[id=item]").css('padding', '0% 10% 5% 10%');
-        
-        $("[id=raise]").css('display', 'none');
+            $("[id=item]").css('padding', '0% 10% 5% 10%');
+            
+            $("[id=raise]").css('display', 'none');
 
-        $("[id=foot]").css('display', 'none');
-    }
-}, 100);
+            $("[id=foot]").css('display', 'none');
+        }
+    }, 100);
+});
 
 $(function(){
     var mobile_flag = isMobile(); // true爲PC端，false爲手機端
