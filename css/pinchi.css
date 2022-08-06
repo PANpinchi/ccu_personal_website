@@ -414,3 +414,10 @@
     color: transparent;
     font-weight: 1000;
 }
+
+
+@media (max-width: 500px) {
+    .rwd-content {
+        font-size: 0.75em;
+    }
+}
