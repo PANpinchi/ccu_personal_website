@@ -1552,6 +1552,7 @@ $("#python_link").click(function(){
 $(function(){
     window.setInterval(function(){
         var mobile_flag = isMobile(); // true爲PC端，false爲手機端
+        var window_w = $(window).width();
 
         $("#others").css('height', "100%");
         $("#others").css('width', "100%");
@@ -1576,7 +1577,7 @@ $(function(){
         $("#competition").css('height', size);
         $("#competition").css('width', size);
 
-        if(mobile_flag){
+        if(mobile_flag || window_w < 1360){
             var size = $("#bamboo").parent().parent().width();
             $("#gan").parent().css('width', size);
             $("#autoencoder").parent().css('width', size);
@@ -1597,11 +1598,6 @@ $(function(){
             $("#research").css('padding', '2rem 2rem 2rem 2rem');
             $("#implementation").css('padding', '2rem 2rem 2rem 2rem');
             $("#participate").css('padding', '2rem 2rem 2rem 2rem');
-
-            $("#header").css('border-right', '');
-            $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
-            $("#header").css('padding-bottom', '1rem');
-            $("#header").css('margin-bottom', '3rem');
 
             $("[id=item]").css('padding', '0% 0% 10% 0%');
 
@@ -1627,16 +1623,24 @@ $(function(){
             $("#implementation").css('padding', '');
             $("#participate").css('padding', '');
 
-            $("#header").css('border-right', 'solid rgb(200, 200, 200)');
-            $("#header").css('border-bottom', '');
-            $("#header").css('padding-bottom', '');
-            $("#header").css('margin-bottom', '');
-
             $("[id=item]").css('padding', '0% 10% 5% 10%');
             
             $("[id=raise]").css('display', 'none');
 
             $("[id=foot]").css('display', 'none');
+        }
+
+        if(mobile_flag || window_w < 990){
+            $("#header").css('border-right', '');
+            $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
+            $("#header").css('padding-bottom', '1rem');
+            $("#header").css('margin-bottom', '3rem');
+        }
+        else{
+            $("#header").css('border-right', 'solid rgb(200, 200, 200)');
+            $("#header").css('border-bottom', '');
+            $("#header").css('padding-bottom', '');
+            $("#header").css('margin-bottom', '');
         }
     }, 100);
 });
