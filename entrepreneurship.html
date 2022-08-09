@@ -65,7 +65,7 @@
                 </div>
                 <div style="height: 2rem"></div>
                 <div class="about_table" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
-                    <div class="row gx-4 gx-lg-4" style="flex-direction: column-reverse;">
+                    <div id="reverse_block" class="row gx-4 gx-lg-4">
                         <div class="col-lg-8 col-md-8 text-left" style="padding: 20px;">
                             <h3 class="text_color3 font-weight-bold">竹談科技 - 竹談電腦包</h3>
                             <br>
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <div style="height: 2rem"></div>
-                    <div class="row gx-4 gx-lg-4" style="flex-direction: column-reverse;">
+                    <div id="reverse_block" class="row gx-4 gx-lg-4">
                         <div class="col-lg-7 col-md-7 text-left" style="padding: 20px;">
                             <h3 class="text_color3 font-weight-bold">竹炭布料材質</h3>
                             <br>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div style="height: 2rem"></div>
-                    <div class="row gx-4 gx-lg-4" style="flex-direction: column-reverse;">
+                    <div id="reverse_block" class="row gx-4 gx-lg-4">
                         <div class="col-lg-12 col-md-12 text-left" style="padding: 20px;">
                             <h3 class="text_color3 font-weight-bold">成果展示</h3>
                             <br>
@@ -244,6 +244,8 @@ window.setInterval(function(){
 
         $("[id=foot]").css('display', 'block');
         $("[id=foot]").css('height', '1rem');
+
+        $("[id=reverse_block]").css('flex-direction', 'column-reverse');
     }
     else{
         $("#masthead").css('height', '');
@@ -251,6 +253,8 @@ window.setInterval(function(){
         $("#entrepreneurship").css('padding', '');
 
         $("[id=foot]").css('display', 'none');
+
+        $("[id=reverse_block]").css('flex-direction', '');
     }
 }, 100);
 
