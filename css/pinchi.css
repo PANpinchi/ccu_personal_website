@@ -415,6 +415,69 @@
     font-weight: 1000;
 }
 
+.poster_outside{
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to right, #036AFF, #00BAFF, #1DE9B6);
+    border-radius: 50px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+}
+
+.poster{
+    width: 93px;
+    height: 43px;
+    background: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px rgb(255, 255, 255);
+    padding-left: 10%;
+    padding-top: 7%;
+    
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.poster_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.poster h6{
+    /*#036AFF, #00BAFF, #1DE9B6*/
+    width: fit-content;
+    background: linear-gradient(to right, #036AFF, #00BAFF, #1DE9B6);
+    background: -webkit-linear-gradient(to right, #036AFF, #00BAFF, #1DE9B6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 1000;
+}
+
+.poster:hover{
+    background: linear-gradient(to right, #036AFF, #00BAFF, #1DE9B6);
+}
+
+.poster:hover h6{
+    /*#036AFF, #00BAFF, #1DE9B6*/
+    width: fit-content;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 1000;
+}
+
 
 @media (max-width: 500px) {
     .rwd-content {
