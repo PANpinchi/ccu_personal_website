@@ -7,8 +7,9 @@
         <meta name="author" content="" />
         <title>PinChi | Personal Website</title>
         <!-- Bootstrap css js jquery-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -37,6 +38,7 @@
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#side_project">Side Project</a></li>
                         <li class="nav-item"><a class="nav-link" href="#implementation">Implementation</a></li>
                         <li class="nav-item"><a class="nav-link" href="#participate">Participate</a></li>
                     </ul>
@@ -52,7 +54,7 @@
                         <div style="height: 0rem"></div>
                         <img src="./assets/img/corgi.png" class="welcome_controller_0" width="200" height="200">
                         <div style="height: 1rem"></div>
-                        <a class="btn btn-light btn-lg controller_0" style="border-radius: 30px; font-size: 18px;" href="#about">more</a>
+                        <a class="btn btn-light btn-lg controller_0" style="border-radius: 25px; font-size: 18px;" href="#about"><strong>more</strong></a>
                     </div>
                     <div class="col-lg-8 align-self-baseline"></div>
                 </div>
@@ -1143,11 +1145,78 @@
                 </div>
             </div>
         </section>
-        <!-- Implementation -->
-        <section class="page-section" style="background-color: #f0f0f0" id="implementation">
-            <div class="container px-6 px-lg-6">
+        <!-- Side Project -->
+        <section class="page-section" style="background-color: #f0f0f0" id="side_project">
+            <div class="container px-4 px-lg-5">
                 <div align="center">
                     <div class="box" align="center">
+                        <h2 class="text_color2 font-weight-bold" style="white-space: nowrap">Side Project</h2>
+                        <h4 class="text_color2 font-weight-bold">專案開發</h4>
+                    </div>
+                </div>
+                <div style="height: 2rem"></div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                            <img src="./assets/img/schedule_generator.png" class="card-img-top" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Schedule Generator</strong></h5>
+                                <p class="card-text">
+                                    <strong>
+                                        The user can select the maximum number of participants, 
+                                        and enter the participant's name to randomly generate the schedule.
+                                    </strong>
+                                </p>
+                                <a href="https://panpinchi.github.io/schedule_generator" class="btn btn-primary" target="_blank">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                            <img src="./assets/img/announcement_template.png" class="card-img-top" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Announcement Template</strong></h5>
+                                <p class="card-text">
+                                    <strong>
+                                        We provide previewable announcement system templates to make it easier for users to develop announcement systems.
+                                    </strong>
+                                </p>
+                                <a href="https://panpinchi.github.io/announcement_template" class="btn btn-primary" target="_blank">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card about_table fadeInUp" aria-hidden="true" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                            <img src="./assets/img/online_punch_in_system.png" class="card-img-top" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
+
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Online Punch In system</strong></h5>
+                                <p class="card-text">
+                                    <strong>
+                                        Under Development ...
+                                    </strong>
+                                </p>
+                                <p class="card-text placeholder-glow">
+                                    <span class="placeholder col-10"></span><br>
+                                    <span class="placeholder col-8"></span><br>
+                                    <span class="placeholder col-6"></span><br>
+                                    <span class="placeholder col-4"></span><br>
+                                </p>
+                                <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Implementation -->
+        <section class="page-section" style="background-color: #f8f8f8" id="implementation">
+            <div class="container px-6 px-lg-6">
+                <div align="center">
+                    <div class="box_2" align="center">
                         <h2 class="text_color2 font-weight-bold">Implementation</h2>
                         <h4 class="text_color2 font-weight-bold">模型實作</h4>
                     </div>
@@ -1203,10 +1272,10 @@
             </div>
         </section>
         <!-- Participate -->
-        <section class="page-section" style="background-color: #f8f8f8" id="participate">
+        <section class="page-section" style="background-color: #f0f0f0" id="participate">
             <div class="container px-6 px-lg-6">
                 <div align="center">
-                    <div class="box_2" align="center">
+                    <div class="box" align="center">
                         <h2 class="text_color2 font-weight-bold">Participate</h2>
                         <h4 class="text_color2 font-weight-bold">參與活動</h4>
                     </div>
@@ -1261,7 +1330,7 @@
             </div>
         </section>
         <!-- Footer -->
-        <footer class=" py-5" style="background-color: #f0f0f0">
+        <footer class=" py-5" style="background-color: #f8f8f8">
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">
                     <a id="web_link" href="index.html" class="link_out" style="margin-left: 1%; margin-right: 1%; font-size: 15px;">
@@ -1305,7 +1374,7 @@
             </div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
