@@ -1147,18 +1147,17 @@
         </section>
         <!-- Side Project -->
         <section class="page-section" style="background-color: #f0f0f0" id="side_project">
-            <div class="container px-4 px-lg-5">
+            <div class="container">
                 <div align="center">
                     <div class="box" align="center">
-                        <h2 class="text_color2 font-weight-bold" style="white-space: nowrap">Side Project</h2>
+                        <h2 class="text_color2 font-weight-bold" style="white-space: nowrap;">Side Project</h2>
                         <h4 class="text_color2 font-weight-bold">專案開發</h4>
                     </div>
                 </div>
                 <div style="height: 2rem"></div>
-                
                 <div class="row">
-                    <div class="col-4">
-                        <div class="card about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                    <div id="card_block" class="col-4" style="margin-bottom: 2rem">
+                        <div class="card about_table fadeInUp" style="height: 100%; box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                             <img src="./assets/img/schedule_generator.png" class="card-img-top" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
                             
                             <div class="card-body">
@@ -1173,8 +1172,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card about_table fadeInUp" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                    <div id="card_block" class="col-4" style="margin-bottom: 2rem">
+                        <div class="card about_table fadeInUp" style="height: 100%; box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                             <img src="./assets/img/announcement_template.png" class="card-img-top" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
                             
                             <div class="card-body">
@@ -1188,8 +1187,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card about_table fadeInUp" aria-hidden="true" style="box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
+                    <div id="card_block" class="col-4" style="margin-bottom: 2rem">
+                        <div class="card about_table fadeInUp" aria-hidden="true" style="height: 100%; box-shadow: 0px 0px 6px 6px #cccccc; padding: 30px;">
                             <img src="./assets/img/online_punch_in_system.png" class="card-img-top" style="box-shadow: 0px 0px 5px 5px #f0f0f0; border-radius: 10px; height: min-content; width: 100%;">
 
                             <div class="card-body">
@@ -1203,7 +1202,6 @@
                                     <span class="placeholder col-10"></span><br>
                                     <span class="placeholder col-8"></span><br>
                                     <span class="placeholder col-6"></span><br>
-                                    <span class="placeholder col-4"></span><br>
                                 </p>
                                 <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                             </div>
@@ -1676,11 +1674,14 @@ $(function(){
             $("#research").removeClass('page-section');
             $("#implementation").removeClass('page-section');
             $("#participate").removeClass('page-section');
+            $("#side_project").removeClass('page-section');
+
 
             $("#about").css('padding', '2rem 2rem 2rem 2rem');
             $("#research").css('padding', '2rem 2rem 2rem 2rem');
             $("#implementation").css('padding', '2rem 2rem 2rem 2rem');
             $("#participate").css('padding', '2rem 2rem 2rem 2rem');
+            $("#side_project").css('padding', '2rem 2rem 2rem 2rem');
 
             $("[id=item]").css('padding', '0% 0% 10% 0%');
 
@@ -1706,11 +1707,13 @@ $(function(){
             $("#research").addClass('page-section');
             $("#implementation").addClass('page-section');
             $("#participate").addClass('page-section');
+            $("#side_project").addClass('page-section');
 
             $("#about").css('padding', '');
             $("#research").css('padding', '');
             $("#implementation").css('padding', '');
             $("#participate").css('padding', '');
+            $("#side_project").css('padding', '');
 
             $("[id=item]").css('padding', '0% 10% 5% 10%');
             
@@ -1733,12 +1736,18 @@ $(function(){
             $("#header").css('border-bottom', 'solid rgb(200, 200, 200)');
             $("#header").css('padding-bottom', '1rem');
             $("#header").css('margin-bottom', '3rem');
+
+            $("[id=card_block]").removeClass('col-4');
+            $("[id=card_block]").addClass('col-12');
         }
         else{
             $("#header").css('border-right', 'solid rgb(200, 200, 200)');
             $("#header").css('border-bottom', '');
             $("#header").css('padding-bottom', '');
             $("#header").css('margin-bottom', '');
+
+            $("[id=card_block]").removeClass('col-12');
+            $("[id=card_block]").addClass('col-4');
         }
     }, 100);
 });
