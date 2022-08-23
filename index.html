@@ -1103,16 +1103,9 @@
                         </h5>
                         <br>
                         <a href="./assets/pdf/LogoGANs.pdf" type="button" style="text-decoration:none" target="_blank">
-                            <div id="learn_more_outside" class="learn_more_outside">
-                                <button id="learn_more" type="button" class="font-weight-bold learn_more">
-                                    <h6 id="learn_more_content" class="font-weight-bold">Learn More</h6>
-                                </button>
-                            </div>
-                        </a>
-                        <a href="./assets/pdf/LogoGANs_poster.pdf" type="button" style="text-decoration:none" target="_blank">
-                            <div id="poster_outside" class="poster_outside">
-                                <button id="poster" type="button" class="font-weight-bold poster">
-                                    <h6 id="poster_content" class="font-weight-bold poster_content">Poster</h6>
+                            <div class="learn_more_outside rwd_learn_more_outside">
+                                <button type="button" class="font-weight-bold learn_more rwd_learn_more">
+                                    <h6 class="font-weight-bold rwd-content">Learn More</h6>
                                 </button>
                             </div>
                         </a>
@@ -1134,16 +1127,9 @@
                         </h5>
                         <br>
                         <a href="./assets/pdf/Gaze_Tracking.pdf" type="button" style="text-decoration:none" target="_blank">
-                            <div id="learn_more_outside" class="learn_more_outside">
-                                <button id="learn_more" type="button" class="font-weight-bold learn_more">
-                                    <h6 id="learn_more_content" class="font-weight-bold">Learn More</h6>
-                                </button>
-                            </div>
-                        </a>
-                        <a href="./assets/pdf/Gaze_Tracking_poster.pdf" type="button" style="text-decoration:none" target="_blank">
-                            <div id="poster_outside" class="poster_outside">
-                                <button id="poster" type="button" class="font-weight-bold poster">
-                                    <h6 id="poster_content" class="font-weight-bold poster_content">Poster</h6>
+                            <div class="learn_more_outside rwd_learn_more_outside">
+                                <button type="button" class="font-weight-bold learn_more rwd_learn_more">
+                                    <h6 class="font-weight-bold rwd-content">Learn More</h6>
                                 </button>
                             </div>
                         </a>
@@ -1383,11 +1369,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
 
@@ -1696,15 +1677,6 @@ $(function(){
 
             $("[id=foot]").css('display', 'block');
             $("[id=foot]").css('height', '1rem');
-
-            $("[id=learn_more_outside]").css('width', '95px');
-            $("[id=learn_more]").css('width', '88px');
-
-            $("[id=poster_outside]").css('width', '75px');
-            $("[id=poster]").css('width', '68px');
-
-            $("[id=learn_more_content]").css('font-size', '0.5rem');
-            $("[id=poster_content]").css('font-size', '0.5rem');
         }
         else{
             $("#masthead").css('height', '');
@@ -1726,15 +1698,6 @@ $(function(){
             $("[id=raise]").css('display', 'none');
 
             $("[id=foot]").css('display', 'none');
-
-            $("[id=learn_more_outside]").css('width', '');
-            $("[id=learn_more]").css('width', '');
-
-            $("[id=poster_outside]").css('width', '');
-            $("[id=poster]").css('width', '');
-
-            $("[id=learn_more_content]").css('font-size', '');
-            $("[id=poster_content]").css('font-size', '');
         }
 
         if(mobile_flag || window_w < 990){
