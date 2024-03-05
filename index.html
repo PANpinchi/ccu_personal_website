@@ -83,7 +83,7 @@
                         <h3 class="text_color3 font-weight-bold">潘品齊</h3>
                         <h5 class="text_color3 font-weight-bold">Pin-Chi Pan</h5>
                         <div style="height: 1rem"></div>
-                        <h4 class="text_color4 font-weight-bold">國立台灣大學 電信工程研究所</h4>
+                        <h4 id="department" class="text_color4 font-weight-bold">國立台灣大學 電信工程研究所</h4>
                         <h6 class="text_color4 font-weight-bold">Graduate Institute of Communication Engineering</h6>
                         <h6 class="text_color4 font-weight-bold">National Taiwan University</h6>
                         <div style="height: 1rem"></div>
@@ -1159,12 +1159,8 @@
                         </h5>
                         <br>
                         <a href="./assets/pdf/LogoGANs.pdf" type="button" style="text-decoration:none" target="_blank">
-                            <div class="learn_more_outside rwd_learn_more_outside">
-                                <button type="button" class="font-weight-bold learn_more rwd_learn_more">
-                                    <div align="center" style="position: relative; right: 3px;">
-                                        <h6 class="font-weight-bold rwd-content">More</h6>
-                                    </div>
-                                </button>
+                            <div class="learn_more_outside">
+                                <button type="button" class="learn_more"><h6>More</h6></button>
                             </div>
                         </a>
                     </div>
@@ -1185,12 +1181,8 @@
                         </h5>
                         <br>
                         <a href="./assets/pdf/Gaze_Tracking.pdf" type="button" style="text-decoration:none;" target="_blank">
-                            <div class="learn_more_outside rwd_learn_more_outside">
-                                <button type="button" class="font-weight-bold learn_more rwd_learn_more" style="text-align:center;">
-                                    <div align="center" style="position: relative; right: 3px;">
-                                        <h6 class="font-weight-bold rwd-content">More</h6>
-                                    </div>
-                                </button>
+                            <div class="learn_more_outside">
+                                <button type="button" class="learn_more"><h6>More</h6></button>
                             </div>
                         </a>
                     </div>
@@ -1221,6 +1213,10 @@
                                             and enter the participant's name to randomly generate the schedule.
                                         </strong>
                                     </p>
+
+                                    <div class="learn_more_outside">
+                                        <button type="button" class="learn_more"><h6>More</h6></button>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -1237,6 +1233,10 @@
                                             We provide previewable announcement system templates to make it easier for users to develop announcement systems.
                                         </strong>
                                     </p>
+
+                                    <div class="learn_more_outside">
+                                        <button type="button" class="learn_more"><h6>More</h6></button>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -1253,6 +1253,10 @@
                                             We provide an online punch-in system to make it easier for users to record working hours or meeting time.
                                         </strong>
                                     </p>
+
+                                    <div class="learn_more_outside">
+                                        <button type="button" class="learn_more"><h6>More</h6></button>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -1700,6 +1704,11 @@ $(function(){
         var window_w = $(window).width();
 
         if(mobile_flag || window_w < 1360){
+            var h4Element = document.getElementById('department');
+            var text = h4Element.textContent;
+            var newText = text.replace(' ', '<br>');
+            h4Element.innerHTML = newText;
+
             $("#masthead").css('height', '100%');
 
             $("#about").removeClass('page-section');
