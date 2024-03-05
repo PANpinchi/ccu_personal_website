@@ -1704,10 +1704,9 @@ $(function(){
         var window_w = $(window).width();
 
         if(mobile_flag || window_w < 1360){
-            var h4Element = document.getElementById('department');
-            var text = h4Element.textContent;
-            var newText = text.replace(' ', '<br>');
-            h4Element.innerHTML = newText;
+            $('#department').html(function(_, html) {
+                return html.replace(' ', '<br>');
+            });
 
             $("#masthead").css('height', '100%');
 
