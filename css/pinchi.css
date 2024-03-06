@@ -479,7 +479,11 @@
 
 
 @media (max-width: 500px) {
-    .rwd-content {
-        font-size: 0.75em;
+    .rwd-research-title {
+        font-size: 0.8rem;
+    }
+
+    .rwd-research-content {
+        font-size: 0.6rem;
     }
 }
