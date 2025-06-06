@@ -102,8 +102,8 @@
 <ul>
   <li>
     <span><strong>URL: </strong></span>
-    <a href="https://panpinchi.github.io/personal_website/competition.html">
-      https://panpinchi.github.io/personal_website/competition.html
+    <a href="https://panpinchi.github.io/ccu_personal_website/competition.html">
+      https://panpinchi.github.io/ccu_personal_website/competition.html
     </a>
   </li>
 </ul>
